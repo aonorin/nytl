@@ -1,0 +1,8 @@
+build/
+.git/
+obj/
+gh-pages/
+bin/
+old/
+*.gch
+*.swp
