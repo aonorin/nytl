@@ -4,7 +4,6 @@ $( document ).ready(function() {
     $("div.title").addClass("h1");
 
     $('li > a[href="index.html"] > span').before("<i class='fa fa-cog'></i> ");
-    $('li > a[href="index.html"] > span').text("globjects");
     $('li > a[href="modules.html"] > span').before("<i class='fa fa-square'></i> ");
     $('li > a[href="namespaces.html"] > span').before("<i class='fa fa-bars'></i> ");
     $('li > a[href="annotated.html"] > span').before("<i class='fa fa-list-ul'></i> ");
@@ -15,12 +14,8 @@ $( document ).ready(function() {
     $('li > a[href="functions_vars.html"] > span').before("<i class='fa fa-list'></i> ");
     $('li > a[href="functions_enum.html"] > span').before("<i class='fa fa-list'></i> ");
     $('li > a[href="functions_eval.html"] > span').before("<i class='fa fa-list'></i> ");
-
-    // allow both variants
     $('img[src="ftv2ns.png"]').replaceWith('<span class="label label-danger">N</span> ');
     $('img[src="ftv2cl.png"]').replaceWith('<span class="label label-danger">C</span> ');
-    $('span.icona > span.icon:contains("N")').html('<span class="label label-danger">N</span> ');
-    $('span.icona > span.icon:contains("C")').html('<span class="label label-danger">C</span> ');
 
     $("ul.tablist").addClass("nav nav-pills nav-justified");
     $("ul.tablist").css("margin-top", "0.5em");
@@ -62,17 +57,17 @@ $( document ).ready(function() {
 
     $('div.fragment.well div.line:first').css('margin-top', '15px');
     $('div.fragment.well div.line:last').css('margin-bottom', '15px');
-    
-    $('table.doxtable').removeClass('doxtable').addClass('table table-striped table-bordered').each(function(){
-        $(this).prepend('<thead></thead>');
-        $(this).find('tbody > tr:first').prependTo($(this).find('thead'));
-        
-        $(this).find('td > span.success').parent().addClass('success');
-        $(this).find('td > span.warning').parent().addClass('warning');
-        $(this).find('td > span.danger').parent().addClass('danger');
-    });
-    
-    
+	
+	$('table.doxtable').removeClass('doxtable').addClass('table table-striped table-bordered').each(function(){
+		$(this).prepend('<thead></thead>');
+		$(this).find('tbody > tr:first').prependTo($(this).find('thead'));
+		
+		$(this).find('td > span.success').parent().addClass('success');
+		$(this).find('td > span.warning').parent().addClass('warning');
+		$(this).find('td > span.danger').parent().addClass('danger');
+	});
+	
+	
 
     if($('div.fragment.well div.ttc').length > 0)
     {
@@ -83,43 +78,43 @@ $( document ).ready(function() {
         $(this).contents().appendTo($(this).siblings('.memItemLeft'));
         $(this).siblings('.memItemLeft').attr('align', 'left');
     });
-    
-    function getOriginalWidthOfImg(img_element) {
-        var t = new Image();
-        t.src = (img_element.getAttribute ? img_element.getAttribute("src") : false) || img_element.src;
-        return t.width;
-    }
-    
-/*    $('div.dyncontent').find('img').each(function(){
-        if(getOriginalWidthOfImg($(this)[0]) > $('#content>div.container').width())
-            $(this).css('width', '100%');
-    });
-  */  
-    $(".memitem").removeClass('memitem');
+	
+	function getOriginalWidthOfImg(img_element) {
+		var t = new Image();
+		t.src = (img_element.getAttribute ? img_element.getAttribute("src") : false) || img_element.src;
+		return t.width;
+	}
+	
+	$('div.dyncontent').find('img').each(function(){
+		if(getOriginalWidthOfImg($(this)[0]) > $('#content>div.container').width())
+			$(this).css('width', '100%');
+	});
+	
+	$(".memitem").removeClass('memitem');
     $(".memproto").removeClass('memproto');
     $(".memdoc").removeClass('memdoc');
-    $("span.mlabel").removeClass('mlabel');
-    $("table.memberdecls").removeClass('memberdecls');
+	$("span.mlabel").removeClass('mlabel');
+	$("table.memberdecls").removeClass('memberdecls');
     $("[class^=memitem]").removeClass('memitem');
     $("span.mlabels").removeClass('mlabels');
     $("table.mlabels").removeClass('mlabels');
     $("td.mlabels-right").removeClass('mlabels-right');
-    $(".navpath").removeClass('navpath');
-    $("li.navelem").removeClass('navelem');
-    $("a.el").removeClass('el');
-    $("div.ah").removeClass('ah');
-    $("div.header").removeClass("header");
-    
-    $('.mdescLeft').each(function(){
-        if($(this).html()=="&nbsp;") {
-            $(this).siblings('.mdescRight').attr('colspan', 2);
-            $(this).remove();
-        }
-    });
-    $('td.memItemLeft').each(function(){
-        if($(this).siblings('.memItemRight').html()=="") {
-            $(this).attr('colspan', 2);
-            $(this).siblings('.memItemRight').remove();
-        }
-    });
+	$(".navpath").removeClass('navpath');
+	$("li.navelem").removeClass('navelem');
+	$("a.el").removeClass('el');
+	$("div.ah").removeClass('ah');
+	$("div.header").removeClass("header");
+	
+	$('.mdescLeft').each(function(){
+		if($(this).html()=="&nbsp;") {
+			$(this).siblings('.mdescRight').attr('colspan', 2);
+			$(this).remove();
+		}
+	});
+	$('td.memItemLeft').each(function(){
+		if($(this).siblings('.memItemRight').html()=="") {
+			$(this).attr('colspan', 2);
+			$(this).siblings('.memItemRight').remove();
+		}
+	});
 });
