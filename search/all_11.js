@@ -12,6 +12,7 @@ var searchData=
   ['vec_3c_20d_2c_20p_20_3e',['vec&lt; D, P &gt;',['../classnytl_1_1vec.html',1,'nytl']]],
   ['vec_3c_20d_2c_20value_5ftype_20_3e',['vec&lt; D, value_type &gt;',['../classnytl_1_1vec.html',1,'nytl']]],
   ['vec_3c_20dim_2c_20prec_20_3e',['vec&lt; dim, prec &gt;',['../classnytl_1_1vec.html',1,'nytl']]],
+  ['vec_3c_20dim_2c_20t_20_26_20_3e',['vec&lt; dim, T &amp; &gt;',['../classnytl_1_1vec.html',1,'nytl']]],
   ['vec_3c_20dim_2c_20value_5ftype_20_3e',['vec&lt; dim, value_type &gt;',['../classnytl_1_1vec.html',1,'nytl']]],
   ['vec_3c_20dimension_2c_20t_20_26_20_3e',['vec&lt; dimension, T &amp; &gt;',['../classnytl_1_1vec_3_01dimension_00_01T_01_6_01_4.html',1,'nytl']]],
   ['vec_3c_20dynamicsize_2c_20t_20_3e',['vec&lt; dynamicSize, T &gt;',['../classnytl_1_1vec_3_01dynamicSize_00_01T_01_4.html',1,'nytl']]],

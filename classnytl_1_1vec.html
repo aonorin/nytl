@@ -110,6 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#related">Related Functions</a> &#124;
 <a href="classnytl_1_1vec-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">nytl::vec&lt; dimension, T &gt; Class Template Reference</div>  </div>
@@ -363,9 +364,2352 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:afe72b014e0285acae9eba08dac612d0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe72b014e0285acae9eba08dac612d0d"></a>
 static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>dim</b> = dimension</td></tr>
 <tr class="separator:afe72b014e0285acae9eba08dac612d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="related"></a>
+Related Functions</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
+</td></tr>
+<tr class="memitem:a017962e4c147e73c617e6ae5f1c14629"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a017962e4c147e73c617e6ae5f1c14629"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a017962e4c147e73c617e6ae5f1c14629">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;obj)</td></tr>
+<tr class="separator:a017962e4c147e73c617e6ae5f1c14629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac489af94c8821457716ab1b5f69108"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:aaac489af94c8821457716ab1b5f69108"><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#aaac489af94c8821457716ab1b5f69108">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;obj)</td></tr>
+<tr class="separator:aaac489af94c8821457716ab1b5f69108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1f654eb20adc88946298c288f329ff"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:afa1f654eb20adc88946298c288f329ff"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#afa1f654eb20adc88946298c288f329ff">operator+</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec, const O &amp;other)</td></tr>
+<tr class="separator:afa1f654eb20adc88946298c288f329ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dffa0c2dab69e8ecd7f343919950eb9"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:a3dffa0c2dab69e8ecd7f343919950eb9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a3dffa0c2dab69e8ecd7f343919950eb9">operator+</a> (const O &amp;other, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec)</td></tr>
+<tr class="separator:a3dffa0c2dab69e8ecd7f343919950eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afee7742aebd167e71ea5102bbf4485"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </td></tr>
+<tr class="memitem:a6afee7742aebd167e71ea5102bbf4485"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6afee7742aebd167e71ea5102bbf4485">operator+</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;a, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;b) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMax(dima, dimb), typename std::conditional&lt; dima &gt;=dimb, Ta, Tb &gt;::type &gt;</td></tr>
+<tr class="separator:a6afee7742aebd167e71ea5102bbf4485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364755e5764342a5581e6f660ba24cdc"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:a364755e5764342a5581e6f660ba24cdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a364755e5764342a5581e6f660ba24cdc">operator-</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec, const O &amp;other)</td></tr>
+<tr class="separator:a364755e5764342a5581e6f660ba24cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bff315c3f22873da35d13d993c454ea"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename OT &gt; </td></tr>
+<tr class="memitem:a1bff315c3f22873da35d13d993c454ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a1bff315c3f22873da35d13d993c454ea">operator-</a> (OT other, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec)</td></tr>
+<tr class="separator:a1bff315c3f22873da35d13d993c454ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276168c6ef29274a5c6c2af47bc92668"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </td></tr>
+<tr class="memitem:a276168c6ef29274a5c6c2af47bc92668"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a276168c6ef29274a5c6c2af47bc92668">operator-</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;a, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;b) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMax(dima, dimb), typename std::conditional&lt; dima &gt;=dimb, Ta, Tb &gt;::type &gt;</td></tr>
+<tr class="separator:a276168c6ef29274a5c6c2af47bc92668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6affffa251def798f03af153650cd6f5"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:a6affffa251def798f03af153650cd6f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6affffa251def798f03af153650cd6f5">operator*</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec, const O &amp;other)</td></tr>
+<tr class="separator:a6affffa251def798f03af153650cd6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fc6177110261d4d61bba882c7be4ee"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:af6fc6177110261d4d61bba882c7be4ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#af6fc6177110261d4d61bba882c7be4ee">operator*</a> (const O &amp;other, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec)</td></tr>
+<tr class="separator:af6fc6177110261d4d61bba882c7be4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d47597bd3780419a6d39ef3e789e453"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </td></tr>
+<tr class="memitem:a6d47597bd3780419a6d39ef3e789e453"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6d47597bd3780419a6d39ef3e789e453">operator*</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;a, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;b) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMax(dima, dimb), typename std::conditional&lt; dima &gt;=dimb, Ta, Tb &gt;::type &gt;</td></tr>
+<tr class="separator:a6d47597bd3780419a6d39ef3e789e453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0ef92497351406787cb714b7e40348"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename OT &gt; </td></tr>
+<tr class="memitem:a9b0ef92497351406787cb714b7e40348"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a9b0ef92497351406787cb714b7e40348">operator/</a> (OT other, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec)</td></tr>
+<tr class="separator:a9b0ef92497351406787cb714b7e40348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e60d918dbf7067ac9a70b17c9250bc7"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </td></tr>
+<tr class="memitem:a6e60d918dbf7067ac9a70b17c9250bc7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6e60d918dbf7067ac9a70b17c9250bc7">operator/</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;a, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;b) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMax(dima, dimb), typename std::conditional&lt; dima &gt;=dimb, Ta, Tb &gt;::type &gt;</td></tr>
+<tr class="separator:a6e60d918dbf7067ac9a70b17c9250bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158641709bd2338952fff9c41a39f645"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename O &gt; </td></tr>
+<tr class="memitem:a158641709bd2338952fff9c41a39f645"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a158641709bd2338952fff9c41a39f645">operator%</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec, const O &amp;other)</td></tr>
+<tr class="separator:a158641709bd2338952fff9c41a39f645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671c81e617185c0beac1c63368fecb67"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T , typename OT &gt; </td></tr>
+<tr class="memitem:a671c81e617185c0beac1c63368fecb67"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a671c81e617185c0beac1c63368fecb67">operator%</a> (OT other, <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; mvec)</td></tr>
+<tr class="separator:a671c81e617185c0beac1c63368fecb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e352f7d445296b2866843aeff305f8"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </td></tr>
+<tr class="memitem:a05e352f7d445296b2866843aeff305f8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a05e352f7d445296b2866843aeff305f8">operator%</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;a, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;b) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMax(dima, dimb), typename std::conditional&lt; dima &gt;=dimb, Ta, Tb &gt;::type &gt;</td></tr>
+<tr class="separator:a05e352f7d445296b2866843aeff305f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaf024d2eb9ceafc27ae259153b3c2c"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:acdaf024d2eb9ceafc27ae259153b3c2c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#acdaf024d2eb9ceafc27ae259153b3c2c">equal</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:acdaf024d2eb9ceafc27ae259153b3c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8b79c7a65cf4a3bd4794c48c26ca48"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a7a8b79c7a65cf4a3bd4794c48c26ca48"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a7a8b79c7a65cf4a3bd4794c48c26ca48">equal</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:a7a8b79c7a65cf4a3bd4794c48c26ca48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219b996a07078250320837aec28db63d"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a219b996a07078250320837aec28db63d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a219b996a07078250320837aec28db63d">notEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a219b996a07078250320837aec28db63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8795ef86a2d3745f26877865f35a89"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:abf8795ef86a2d3745f26877865f35a89"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#abf8795ef86a2d3745f26877865f35a89">notEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:abf8795ef86a2d3745f26877865f35a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecb32aa47454b19e6941d6bb0c7148d"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a6ecb32aa47454b19e6941d6bb0c7148d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6ecb32aa47454b19e6941d6bb0c7148d">lessThan</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a6ecb32aa47454b19e6941d6bb0c7148d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabb0d8d15bfdf6bd4260bc03b1120c5"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:adabb0d8d15bfdf6bd4260bc03b1120c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; <a class="el" href="classnytl_1_1vec.html#a3e7e697fa4577b9125f529c57ba630f0">min</a>(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#adabb0d8d15bfdf6bd4260bc03b1120c5">greaterThan</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:adabb0d8d15bfdf6bd4260bc03b1120c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5eac1fdcb9f84bf5930bb2a1c430ad"><td class="memTemplParams" colspan="2">template&lt;std::size_t DA, std::size_t DB, typename TA , typename TB &gt; </td></tr>
+<tr class="memitem:a1f5eac1fdcb9f84bf5930bb2a1c430ad"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(DA, DB), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a1f5eac1fdcb9f84bf5930bb2a1c430ad">lessThanEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; DA, TA &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; DB, TB &gt; &amp;vecb)</td></tr>
+<tr class="separator:a1f5eac1fdcb9f84bf5930bb2a1c430ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475d402d6a6f93c1341a67a02d5a493f"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a475d402d6a6f93c1341a67a02d5a493f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a475d402d6a6f93c1341a67a02d5a493f">greaterThanEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a475d402d6a6f93c1341a67a02d5a493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb3791cf8ef60539600ecff608b62d6"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a9fb3791cf8ef60539600ecff608b62d6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a9fb3791cf8ef60539600ecff608b62d6">lessThan</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:a9fb3791cf8ef60539600ecff608b62d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69724cec6f4b2e6c72983bedf8ba21e0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a69724cec6f4b2e6c72983bedf8ba21e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a69724cec6f4b2e6c72983bedf8ba21e0">greaterThan</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:a69724cec6f4b2e6c72983bedf8ba21e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf08824c86d8d3ed51886b33f8d47727"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:adf08824c86d8d3ed51886b33f8d47727"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#adf08824c86d8d3ed51886b33f8d47727">lessThanEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:adf08824c86d8d3ed51886b33f8d47727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed92a6b403267c92be2ecf1e6bfff525"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:aed92a6b403267c92be2ecf1e6bfff525"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#aed92a6b403267c92be2ecf1e6bfff525">greaterThanEqual</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)</td></tr>
+<tr class="separator:aed92a6b403267c92be2ecf1e6bfff525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06b56fbd29f762e65eaacc4275819c7"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:aa06b56fbd29f762e65eaacc4275819c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#aa06b56fbd29f762e65eaacc4275819c7">operator==</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:aa06b56fbd29f762e65eaacc4275819c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651541cfb7aacdae86687781b1ddde8c"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a651541cfb7aacdae86687781b1ddde8c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a651541cfb7aacdae86687781b1ddde8c">operator!=</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a651541cfb7aacdae86687781b1ddde8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb8e4cd8ab2d027b41b5d75a9e472da"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a0cb8e4cd8ab2d027b41b5d75a9e472da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a0cb8e4cd8ab2d027b41b5d75a9e472da">operator&lt;</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a0cb8e4cd8ab2d027b41b5d75a9e472da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4347fa90058874abbd2b1670b0001f4c"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a4347fa90058874abbd2b1670b0001f4c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a4347fa90058874abbd2b1670b0001f4c">operator&gt;</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a4347fa90058874abbd2b1670b0001f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa389bb2362eda38f0cb15e5d09592cf4"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:aa389bb2362eda38f0cb15e5d09592cf4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#aa389bb2362eda38f0cb15e5d09592cf4">operator&lt;=</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:aa389bb2362eda38f0cb15e5d09592cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80a340e51f11e079b024e7fde083db1"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:ad80a340e51f11e079b024e7fde083db1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ad80a340e51f11e079b024e7fde083db1">operator&gt;=</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:ad80a340e51f11e079b024e7fde083db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffc1e8e6499ed3e9ab43a95b296cb10"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a8ffc1e8e6499ed3e9ab43a95b296cb10"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a8ffc1e8e6499ed3e9ab43a95b296cb10">sum</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;v) -&gt; decltype(v[0]+v[0])</td></tr>
+<tr class="separator:a8ffc1e8e6499ed3e9ab43a95b296cb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ecdb06cb1464c5a9db208fc0c4dc0e"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:ae3ecdb06cb1464c5a9db208fc0c4dc0e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;v) -&gt; decltype(sqrt(v[0]*v[0]))</td></tr>
+<tr class="separator:ae3ecdb06cb1464c5a9db208fc0c4dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f57d626d324744711b093e0ba74bb6"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:ab3f57d626d324744711b093e0ba74bb6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ab3f57d626d324744711b093e0ba74bb6">norm</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;v) -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(v))</td></tr>
+<tr class="separator:ab3f57d626d324744711b093e0ba74bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a325b7f597c26057944a67af9011730"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a2a325b7f597c26057944a67af9011730"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a2a325b7f597c26057944a67af9011730">dot</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb) -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#a8ffc1e8e6499ed3e9ab43a95b296cb10">sum</a>(veca *vecb))</td></tr>
+<tr class="separator:a2a325b7f597c26057944a67af9011730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d4ac79e15e2201b02c26fa5657db81"><td class="memTemplParams" colspan="2">template&lt;typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a77d4ac79e15e2201b02c26fa5657db81"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a77d4ac79e15e2201b02c26fa5657db81">cross</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 3, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 3, Tb &gt; &amp;vecb) -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 3, decltype(veca[0]*vecb[0])&gt;</td></tr>
+<tr class="separator:a77d4ac79e15e2201b02c26fa5657db81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644e225bade60161d2a5ef66266de349"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a644e225bade60161d2a5ef66266de349"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a644e225bade60161d2a5ef66266de349">angle</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a644e225bade60161d2a5ef66266de349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f328546b65cc5ef36eaab305ca0166f"><td class="memTemplParams" colspan="2">template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:a8f328546b65cc5ef36eaab305ca0166f"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a8f328546b65cc5ef36eaab305ca0166f">smallerAngle</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:a8f328546b65cc5ef36eaab305ca0166f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5866866e41c77bc15ec0d5d002f893c"><td class="memTemplParams" colspan="2">template&lt;typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:af5866866e41c77bc15ec0d5d002f893c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#af5866866e41c77bc15ec0d5d002f893c">cangle</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 2, Ta &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 2, Tb &gt; &amp;vecb)</td></tr>
+<tr class="separator:af5866866e41c77bc15ec0d5d002f893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbc365ddaa0a3450abb57f238ca0f9b"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a0bbc365ddaa0a3450abb57f238ca0f9b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a0bbc365ddaa0a3450abb57f238ca0f9b">normalize</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;veca) -&gt; decltype(veca/<a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(veca))</td></tr>
+<tr class="separator:a0bbc365ddaa0a3450abb57f238ca0f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac140f7d3ea87d67bb352db0318ac8e22"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:ac140f7d3ea87d67bb352db0318ac8e22"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ac140f7d3ea87d67bb352db0318ac8e22">distance</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;vecb) -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(veca-vecb))</td></tr>
+<tr class="separator:ac140f7d3ea87d67bb352db0318ac8e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6badef3e084101f1f2dcecf4cd6f16c5"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a6badef3e084101f1f2dcecf4cd6f16c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6badef3e084101f1f2dcecf4cd6f16c5">radians</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; veca)</td></tr>
+<tr class="separator:a6badef3e084101f1f2dcecf4cd6f16c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b0fa4b5947c38e8a6b18c9f7416bd8"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:ad8b0fa4b5947c38e8a6b18c9f7416bd8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ad8b0fa4b5947c38e8a6b18c9f7416bd8">degrees</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; veca)</td></tr>
+<tr class="separator:ad8b0fa4b5947c38e8a6b18c9f7416bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30735b8c88e5b2f770aef1b5c5e667a1"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a30735b8c88e5b2f770aef1b5c5e667a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a30735b8c88e5b2f770aef1b5c5e667a1">abs</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; veca)</td></tr>
+<tr class="separator:a30735b8c88e5b2f770aef1b5c5e667a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1eead2785e7651b95b1162937475338"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb , typename Tc &gt; </td></tr>
+<tr class="memitem:ad1eead2785e7651b95b1162937475338"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ad1eead2785e7651b95b1162937475338">clamp</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; val, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;minVal, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tc &gt; &amp;maxVal)</td></tr>
+<tr class="separator:ad1eead2785e7651b95b1162937475338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3d63f6f073a1b8c027fe01dffe0da4"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb , typename Tc &gt; </td></tr>
+<tr class="memitem:a1e3d63f6f073a1b8c027fe01dffe0da4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a1e3d63f6f073a1b8c027fe01dffe0da4">clamp</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; val, const Tb &amp;minVal, const Tc &amp;maxVal)</td></tr>
+<tr class="separator:a1e3d63f6f073a1b8c027fe01dffe0da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d54a8ff86c1468753d3722acb92536"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:af8d54a8ff86c1468753d3722acb92536"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#af8d54a8ff86c1468753d3722acb92536">mix</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; x, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;y, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;a)</td></tr>
+<tr class="separator:af8d54a8ff86c1468753d3722acb92536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97cc8bc45ee13f0e7196919941d329a"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:ac97cc8bc45ee13f0e7196919941d329a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ac97cc8bc45ee13f0e7196919941d329a">mix</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; x, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;y, const Tb &amp;a)</td></tr>
+<tr class="separator:ac97cc8bc45ee13f0e7196919941d329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97314e19c08bbc5653ed8b3120802e9"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename Ta , typename Tb &gt; </td></tr>
+<tr class="memitem:ae97314e19c08bbc5653ed8b3120802e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ae97314e19c08bbc5653ed8b3120802e9">mix</a> (const Ta &amp;x, const Ta &amp;y, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;a)</td></tr>
+<tr class="separator:ae97314e19c08bbc5653ed8b3120802e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb078d68f22ded923af7ec9bc53e2ba7"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:abb078d68f22ded923af7ec9bc53e2ba7"><td class="memTemplItemLeft" align="right" valign="top">raw&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#abb078d68f22ded923af7ec9bc53e2ba7">smallest</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;a)</td></tr>
+<tr class="separator:abb078d68f22ded923af7ec9bc53e2ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891bc860a1ebcfb6da276b33cb74d6b6"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a891bc860a1ebcfb6da276b33cb74d6b6"><td class="memTemplItemLeft" align="right" valign="top">raw&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a891bc860a1ebcfb6da276b33cb74d6b6">greatest</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;a)</td></tr>
+<tr class="separator:a891bc860a1ebcfb6da276b33cb74d6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0aed392c269b53da022bd46add416c"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim&gt; </td></tr>
+<tr class="memitem:a6e0aed392c269b53da022bd46add416c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a6e0aed392c269b53da022bd46add416c">any</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;v)</td></tr>
+<tr class="separator:a6e0aed392c269b53da022bd46add416c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08cf73cc3ce80b2539ea2b362701346"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim&gt; </td></tr>
+<tr class="memitem:ad08cf73cc3ce80b2539ea2b362701346"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ad08cf73cc3ce80b2539ea2b362701346">all</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;v)</td></tr>
+<tr class="separator:ad08cf73cc3ce80b2539ea2b362701346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25506dc71c18510a1de6223da47464e"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim&gt; </td></tr>
+<tr class="memitem:ab25506dc71c18510a1de6223da47464e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#ab25506dc71c18510a1de6223da47464e">none</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;v)</td></tr>
+<tr class="separator:ab25506dc71c18510a1de6223da47464e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c3733c9946056c1888c20add1d6ce3"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a65c3733c9946056c1888c20add1d6ce3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a65c3733c9946056c1888c20add1d6ce3">operator!</a> (<a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; v)</td></tr>
+<tr class="separator:a65c3733c9946056c1888c20add1d6ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ba6f060883b9320d952e9ec22cd3f1"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:a72ba6f060883b9320d952e9ec22cd3f1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a72ba6f060883b9320d952e9ec22cd3f1">max</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;vecb)</td></tr>
+<tr class="separator:a72ba6f060883b9320d952e9ec22cd3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9919655d45c717e7e678a1d08fba18"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:a8c9919655d45c717e7e678a1d08fba18"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a8c9919655d45c717e7e678a1d08fba18">max</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;veca, const prec &amp;value)</td></tr>
+<tr class="separator:a8c9919655d45c717e7e678a1d08fba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7e697fa4577b9125f529c57ba630f0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:a3e7e697fa4577b9125f529c57ba630f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a3e7e697fa4577b9125f529c57ba630f0">min</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;veca, const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;vecb)</td></tr>
+<tr class="separator:a3e7e697fa4577b9125f529c57ba630f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f8074e94e5f2fd366f9c607654e1d7"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename prec &gt; </td></tr>
+<tr class="memitem:a85f8074e94e5f2fd366f9c607654e1d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1vec.html#a85f8074e94e5f2fd366f9c607654e1d7">min</a> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;veca, const prec &amp;value)</td></tr>
+<tr class="separator:a85f8074e94e5f2fd366f9c607654e1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a30735b8c88e5b2f770aef1b5c5e667a1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; abs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>veca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad08cf73cc3ce80b2539ea2b362701346"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool all </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a644e225bade60161d2a5ef66266de349"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double angle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the angle between 2 vecs, always the smaller one that is &lt;= PI. Returns the angle in radiant form. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e0aed392c269b53da022bd46add416c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool any </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5866866e41c77bc15ec0d5d002f893c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double cangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 2, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 2, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the absolute, clockwise angle between two 2-dimensional vectors. Angle is returned in radian form. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1eead2785e7651b95b1162937475338"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb , typename Tc &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; clamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>minVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tc &gt; &amp;&#160;</td>
+          <td class="paramname"><em>maxVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e3d63f6f073a1b8c027fe01dffe0da4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb , typename Tc &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; clamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>minVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tc &amp;&#160;</td>
+          <td class="paramname"><em>maxVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77d4ac79e15e2201b02c26fa5657db81"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cross </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 3, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; 3, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;3, decltype(veca[0] * vecb[0])&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8b0fa4b5947c38e8a6b18c9f7416bd8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, double &gt; degrees </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>veca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac140f7d3ea87d67bb352db0318ac8e22"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(veca - vecb))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a325b7f597c26057944a67af9011730"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#a8ffc1e8e6499ed3e9ab43a95b296cb10">sum</a>(veca * vecb))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acdaf024d2eb9ceafc27ae259153b3c2c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a8b79c7a65cf4a3bd4794c48c26ca48"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adabb0d8d15bfdf6bd4260bc03b1120c5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; <a class="el" href="classnytl_1_1vec.html#a3e7e697fa4577b9125f529c57ba630f0">min</a>(dima, dimb), bool &gt; greaterThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69724cec6f4b2e6c72983bedf8ba21e0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; greaterThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a475d402d6a6f93c1341a67a02d5a493f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; greaterThanEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed92a6b403267c92be2ecf1e6bfff525"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; greaterThanEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a891bc860a1ebcfb6da276b33cb74d6b6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">raw&lt; T &gt; greatest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3ecdb06cb1464c5a9db208fc0c4dc0e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; decltype(sqrt(v[0] * v[0]))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ecb32aa47454b19e6941d6bb0c7148d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; lessThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fb3791cf8ef60539600ecff608b62d6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; lessThan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f5eac1fdcb9f84bf5930bb2a1c430ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t DA, std::size_t DB, typename TA , typename TB &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(DA, DB), bool &gt; lessThanEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; DA, TA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; DB, TB &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf08824c86d8d3ed51886b33f8d47727"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; lessThanEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72ba6f060883b9320d952e9ec22cd3f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; max </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c9919655d45c717e7e678a1d08fba18"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; max </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const prec &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e7e697fa4577b9125f529c57ba630f0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; min </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85f8074e94e5f2fd366f9c607654e1d7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; min </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const prec &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8d54a8ff86c1468753d3722acb92536"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; mix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac97cc8bc45ee13f0e7196919941d329a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; mix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae97314e19c08bbc5653ed8b3120802e9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; mix </td>
+          <td>(</td>
+          <td class="paramtype">const Ta &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Ta &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab25506dc71c18510a1de6223da47464e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool none </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3f57d626d324744711b093e0ba74bb6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename prec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto norm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, prec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; decltype(<a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(v))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alias function for <a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bbc365ddaa0a3450abb57f238ca0f9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto normalize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em></td><td>)</td>
+          <td> -&gt; decltype(veca / <a class="el" href="classnytl_1_1vec.html#ae3ecdb06cb1464c5a9db208fc0c4dc0e">length</a>(veca))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a219b996a07078250320837aec28db63d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; notEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf8795ef86a2d3745f26877865f35a89"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, bool &gt; notEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Tb &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65c3733c9946056c1888c20add1d6ce3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator! </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a651541cfb7aacdae86687781b1ddde8c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; <a class="el" href="classnytl_1_1vec.html#a65c3733c9946056c1888c20add1d6ce3">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a158641709bd2338952fff9c41a39f645"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator% </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a671c81e617185c0beac1c63368fecb67"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename OT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator% </td>
+          <td>(</td>
+          <td class="paramtype">OT&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05e352f7d445296b2866843aeff305f8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator% </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;detail::dMax(dima, dimb), typename std::conditional&lt;dima &gt;= dimb, Ta, Tb&gt;::type&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6affffa251def798f03af153650cd6f5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6fc6177110261d4d61bba882c7be4ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d47597bd3780419a6d39ef3e789e453"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;detail::dMax(dima, dimb), typename std::conditional&lt;dima &gt;= dimb, Ta, Tb&gt;::type&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa1f654eb20adc88946298c288f329ff"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3dffa0c2dab69e8ecd7f343919950eb9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6afee7742aebd167e71ea5102bbf4485"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;detail::dMax(dima, dimb), typename std::conditional&lt;dima &gt;= dimb, Ta, Tb&gt;::type&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a364755e5764342a5581e6f660ba24cdc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const O &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1bff315c3f22873da35d13d993c454ea"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename OT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator- </td>
+          <td>(</td>
+          <td class="paramtype">OT&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a276168c6ef29274a5c6c2af47bc92668"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;detail::dMax(dima, dimb), typename std::conditional&lt;dima &gt;= dimb, Ta, Tb&gt;::type&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b0ef92497351406787cb714b7e40348"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T , typename OT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; operator/ </td>
+          <td>(</td>
+          <td class="paramtype">OT&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>mvec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e60d918dbf7067ac9a70b17c9250bc7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, typename Ta , std::size_t dimb, typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classnytl_1_1vec.html">vec</a>&lt;detail::dMax(dima, dimb), typename std::conditional&lt;dima &gt;= dimb, Ta, Tb&gt;::type&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0cb8e4cd8ab2d027b41b5d75a9e472da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a017962e4c147e73c617e6ae5f1c14629"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prints all values individually to an output stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa389bb2362eda38f0cb15e5d09592cf4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa06b56fbd29f762e65eaacc4275819c7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4347fa90058874abbd2b1670b0001f4c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad80a340e51f11e079b024e7fde083db1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; detail::dMin(dima, dimb), bool &gt; operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaac489af94c8821457716ab1b5f69108"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Loads all components from an input stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6badef3e084101f1f2dcecf4cd6f16c5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, double &gt; radians </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt;&#160;</td>
+          <td class="paramname"><em>veca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f328546b65cc5ef36eaab305ca0166f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dima, std::size_t dimb, typename Ta , typename Tb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double smallerAngle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dima, Ta &gt; &amp;&#160;</td>
+          <td class="paramname"><em>veca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dimb, Tb &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the smallest angle between two lines with the given vectors as direction. The Returned angle is always &lt;= PI/2. Returns the angle in radian form. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb078d68f22ded923af7ec9bc53e2ba7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">raw&lt; T &gt; smallest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ffc1e8e6499ed3e9ab43a95b296cb10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto sum </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; dim, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; decltype(v[0] + v[0])
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="vec_8hpp_source.html">vec.hpp</a></li>
+<li>vec.inl</li>
 <li><a class="el" href="refVec_8hpp_source.html">refVec.hpp</a></li>
 </ul>
 </div><!-- contents -->

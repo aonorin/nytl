@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gradient',['gradient',['../classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a17481a3f67c3bd5c33446b1cbee7baca',1,'nytl::simplex&lt; D, P, 1 &gt;::gradient() const '],['../classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a9e68e9f87e386d7f8f754ceebf220ddd',1,'nytl::simplex&lt; D, P, 1 &gt;::gradient(std::size_t dim) const ']]],
-  ['greatestvalue',['greatestValue',['../classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a78729814e1a1e0d26a37c3c826b8a4d8',1,'nytl::simplex&lt; D, P, 1 &gt;']]]
+  ['equal',['equal',['../classnytl_1_1vec.html#acdaf024d2eb9ceafc27ae259153b3c2c',1,'nytl::vec::equal(const vec&lt; dima, Ta &gt; &amp;veca, const vec&lt; dimb, Tb &gt; &amp;vecb)'],['../classnytl_1_1vec.html#a7a8b79c7a65cf4a3bd4794c48c26ca48',1,'nytl::vec::equal(const vec&lt; dim, Ta &gt; &amp;veca, const Tb &amp;value)']]]
 ];
