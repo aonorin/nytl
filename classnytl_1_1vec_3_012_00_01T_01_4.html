@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -102,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacenytl.html">nytl</a></li><li class="navelem"><a class="el" href="classnytl_1_1vec_3_012_00_01T_01_4.html">vec&lt; 2, T &gt;</a></li>  </ul>
+<li class="navelem"><b>nytl</b></li><li class="navelem"><a class="el" href="classnytl_1_1vec_3_012_00_01T_01_4.html">vec&lt; 2, T &gt;</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -116,6 +115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">nytl::vec&lt; 2, T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class nytl::vec&lt; 2, T &gt;</h3>
+
+<p>2-dimensional vec specialization. Offers all vec functionality, but to the 2 components can be refered to with vec.x and vec.y. </p>
+</div>
+<p><code>#include &lt;<a class="el" href="vec_8hpp_source.html">vec.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -170,89 +176,92 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> (
 <tr class="memitem:abdb82b4c9c3756c18b610656a147dac2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb82b4c9c3756c18b610656a147dac2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (value_type a, value_type b) noexcept</td></tr>
 <tr class="separator:abdb82b4c9c3756c18b610656a147dac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4104ec4d62488c21f38d5b2811e146a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4104ec4d62488c21f38d5b2811e146a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (const <a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;other) noexcept=default</td></tr>
-<tr class="separator:a4104ec4d62488c21f38d5b2811e146a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1834c3ee040153746286606292bc6f5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1834c3ee040153746286606292bc6f5b"></a>
-<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;other) noexcept=default</td></tr>
-<tr class="separator:a1834c3ee040153746286606292bc6f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8d3cdc9386d1c85646a5573c47113f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f8d3cdc9386d1c85646a5573c47113f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="separator:a8f8d3cdc9386d1c85646a5573c47113f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893326c55f515679c9c75672ad001fc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a893326c55f515679c9c75672ad001fc8"></a>
-<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="separator:a893326c55f515679c9c75672ad001fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9df04324d29cd2ea222195fa2f81d6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4d9df04324d29cd2ea222195fa2f81d6"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:a4d9df04324d29cd2ea222195fa2f81d6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:a4d9df04324d29cd2ea222195fa2f81d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9953bf848f14e029d7b71a9d6ce72afc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9953bf848f14e029d7b71a9d6ce72afc"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:a9953bf848f14e029d7b71a9d6ce72afc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:a9953bf848f14e029d7b71a9d6ce72afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfa5df68a4fca37bf680fc7ce4147b6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0cfa5df68a4fca37bf680fc7ce4147b6"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:a0cfa5df68a4fca37bf680fc7ce4147b6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:a0cfa5df68a4fca37bf680fc7ce4147b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc239eb43a1c5333007ad1776d09738b"><td class="memTemplParams" colspan="2"><a class="anchor" id="abc239eb43a1c5333007ad1776d09738b"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:abc239eb43a1c5333007ad1776d09738b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:abc239eb43a1c5333007ad1776d09738b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa879b00759165809ab933a4a6a9d2746"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa879b00759165809ab933a4a6a9d2746"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:aa879b00759165809ab933a4a6a9d2746"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator%=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:aa879b00759165809ab933a4a6a9d2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa385d2bc704b314dd9905f8bb438cbdc"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa385d2bc704b314dd9905f8bb438cbdc"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:aa385d2bc704b314dd9905f8bb438cbdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator|=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:aa385d2bc704b314dd9905f8bb438cbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6575c34d3dd8ae2da10b3c0729967f2"><td class="memTemplParams" colspan="2"><a class="anchor" id="af6575c34d3dd8ae2da10b3c0729967f2"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:af6575c34d3dd8ae2da10b3c0729967f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator^=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:af6575c34d3dd8ae2da10b3c0729967f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a087290e94784d76bd83987175705faf9"><td class="memTemplParams" colspan="2"><a class="anchor" id="a087290e94784d76bd83987175705faf9"></a>
-template&lt;size_t odim, typename ot &gt; </td></tr>
-<tr class="memitem:a087290e94784d76bd83987175705faf9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&amp;=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; odim, ot &gt; &amp;other)</td></tr>
-<tr class="separator:a087290e94784d76bd83987175705faf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc550fd1ffbd27df1534b2a3660c8d0a"><td class="memTemplParams" colspan="2"><a class="anchor" id="adc550fd1ffbd27df1534b2a3660c8d0a"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:adc550fd1ffbd27df1534b2a3660c8d0a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:adc550fd1ffbd27df1534b2a3660c8d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4df23a7c5cce49de6e37d13e6df4fee"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa4df23a7c5cce49de6e37d13e6df4fee"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:aa4df23a7c5cce49de6e37d13e6df4fee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:aa4df23a7c5cce49de6e37d13e6df4fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504af338b940973b7afc9d4e76d16d21"><td class="memTemplParams" colspan="2"><a class="anchor" id="a504af338b940973b7afc9d4e76d16d21"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:a504af338b940973b7afc9d4e76d16d21"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:a504af338b940973b7afc9d4e76d16d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac936a58d2ec291d2e2c2bae3bab595"><td class="memTemplParams" colspan="2"><a class="anchor" id="aeac936a58d2ec291d2e2c2bae3bab595"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:aeac936a58d2ec291d2e2c2bae3bab595"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:aeac936a58d2ec291d2e2c2bae3bab595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a966daa2ac19f710bb6485b4b23bc6860"><td class="memTemplParams" colspan="2"><a class="anchor" id="a966daa2ac19f710bb6485b4b23bc6860"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:a966daa2ac19f710bb6485b4b23bc6860"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator%=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:a966daa2ac19f710bb6485b4b23bc6860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131dc58efbb4a9b878161cfea6d98dbc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a131dc58efbb4a9b878161cfea6d98dbc"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:a131dc58efbb4a9b878161cfea6d98dbc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator|=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:a131dc58efbb4a9b878161cfea6d98dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9d544e1bb15cea059d17c14fe6912b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9b9d544e1bb15cea059d17c14fe6912b"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:a9b9d544e1bb15cea059d17c14fe6912b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator^=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:a9b9d544e1bb15cea059d17c14fe6912b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372009d7dd07dea5a85621e0ea48f194"><td class="memTemplParams" colspan="2"><a class="anchor" id="a372009d7dd07dea5a85621e0ea48f194"></a>
-template&lt;typename ot &gt; </td></tr>
-<tr class="memitem:a372009d7dd07dea5a85621e0ea48f194"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&amp;=</b> (const ot &amp;other)</td></tr>
-<tr class="separator:a372009d7dd07dea5a85621e0ea48f194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ab33f752f649d5d8ea283c5c3a19a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19ab33f752f649d5d8ea283c5c3a19a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (size_type) noexcept</td></tr>
+<tr class="separator:a19ab33f752f649d5d8ea283c5c3a19a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4916940a8bf31b8b5d3e9625c620b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c4916940a8bf31b8b5d3e9625c620b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (const <a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;lhs) noexcept=default</td></tr>
+<tr class="separator:a4c4916940a8bf31b8b5d3e9625c620b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e5d5e42c775325d3bc6eab2ed648f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38e5d5e42c775325d3bc6eab2ed648f9"></a>
+<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;lhs) noexcept=default</td></tr>
+<tr class="separator:a38e5d5e42c775325d3bc6eab2ed648f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935c10d0233d21257b7e484806c16541"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a935c10d0233d21257b7e484806c16541"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b> (<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&amp;lhs) noexcept=default</td></tr>
+<tr class="separator:a935c10d0233d21257b7e484806c16541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80edc1a0d3ef0ec1c4b69b0ad1f1774e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80edc1a0d3ef0ec1c4b69b0ad1f1774e"></a>
+<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&amp;lhs) noexcept=default</td></tr>
+<tr class="separator:a80edc1a0d3ef0ec1c4b69b0ad1f1774e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad816bfb4dfc41453e453012f0240e2df"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad816bfb4dfc41453e453012f0240e2df"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:ad816bfb4dfc41453e453012f0240e2df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:ad816bfb4dfc41453e453012f0240e2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a0d1d83043a7399a3d3e4a55af8974"><td class="memTemplParams" colspan="2"><a class="anchor" id="a61a0d1d83043a7399a3d3e4a55af8974"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a61a0d1d83043a7399a3d3e4a55af8974"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a61a0d1d83043a7399a3d3e4a55af8974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86210a2410ae48a75ee74f700fba9e34"><td class="memTemplParams" colspan="2"><a class="anchor" id="a86210a2410ae48a75ee74f700fba9e34"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a86210a2410ae48a75ee74f700fba9e34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a86210a2410ae48a75ee74f700fba9e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6c5fd642c7730251591de1919b8979"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3f6c5fd642c7730251591de1919b8979"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a3f6c5fd642c7730251591de1919b8979"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a3f6c5fd642c7730251591de1919b8979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ddf6c374f3c3bbe3ddf6f553e24b43"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad2ddf6c374f3c3bbe3ddf6f553e24b43"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:ad2ddf6c374f3c3bbe3ddf6f553e24b43"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator%=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:ad2ddf6c374f3c3bbe3ddf6f553e24b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7051f415a7223ccb4e5e5bebcaf546ef"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7051f415a7223ccb4e5e5bebcaf546ef"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a7051f415a7223ccb4e5e5bebcaf546ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator|=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a7051f415a7223ccb4e5e5bebcaf546ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379fe7ced9f4e5e92037ebee118962a4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a379fe7ced9f4e5e92037ebee118962a4"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a379fe7ced9f4e5e92037ebee118962a4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator^=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a379fe7ced9f4e5e92037ebee118962a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9367a350f9d6ecdddb1ce5aed8e216"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6e9367a350f9d6ecdddb1ce5aed8e216"></a>
+template&lt;std::size_t OD, typename ot &gt; </td></tr>
+<tr class="memitem:a6e9367a350f9d6ecdddb1ce5aed8e216"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&amp;=</b> (const <a class="el" href="classnytl_1_1vec.html">vec</a>&lt; OD, ot &gt; &amp;lhs)</td></tr>
+<tr class="separator:a6e9367a350f9d6ecdddb1ce5aed8e216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580b0c92614b1c81e7f7989f55b2a57c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a580b0c92614b1c81e7f7989f55b2a57c"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:a580b0c92614b1c81e7f7989f55b2a57c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (OT lhs)</td></tr>
+<tr class="separator:a580b0c92614b1c81e7f7989f55b2a57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b1e13a7914da7f84b0a88d77f87b07"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae1b1e13a7914da7f84b0a88d77f87b07"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:ae1b1e13a7914da7f84b0a88d77f87b07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (OT lhs)</td></tr>
+<tr class="separator:ae1b1e13a7914da7f84b0a88d77f87b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801c2ff0fe95575708eb9776bc28d8ea"><td class="memTemplParams" colspan="2"><a class="anchor" id="a801c2ff0fe95575708eb9776bc28d8ea"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:a801c2ff0fe95575708eb9776bc28d8ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*=</b> (OT lhs)</td></tr>
+<tr class="separator:a801c2ff0fe95575708eb9776bc28d8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf6c456a237714a2c735090ff093361"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0cf6c456a237714a2c735090ff093361"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:a0cf6c456a237714a2c735090ff093361"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (OT lhs)</td></tr>
+<tr class="separator:a0cf6c456a237714a2c735090ff093361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99395ddcae5c97701493787b9fc738c"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac99395ddcae5c97701493787b9fc738c"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:ac99395ddcae5c97701493787b9fc738c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator%=</b> (OT lhs)</td></tr>
+<tr class="separator:ac99395ddcae5c97701493787b9fc738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0aff496ca9238d86b6639c8846fddd1"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac0aff496ca9238d86b6639c8846fddd1"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:ac0aff496ca9238d86b6639c8846fddd1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator|=</b> (OT lhs)</td></tr>
+<tr class="separator:ac0aff496ca9238d86b6639c8846fddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9216262f6c1c2a8e1cdbbf8e11fc20"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0b9216262f6c1c2a8e1cdbbf8e11fc20"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:a0b9216262f6c1c2a8e1cdbbf8e11fc20"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator^=</b> (OT lhs)</td></tr>
+<tr class="separator:a0b9216262f6c1c2a8e1cdbbf8e11fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fbc82bf9f8146f79ce124b05e8bc4f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a10fbc82bf9f8146f79ce124b05e8bc4f"></a>
+template&lt;typename OT &gt; </td></tr>
+<tr class="memitem:a10fbc82bf9f8146f79ce124b05e8bc4f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&amp;=</b> (OT lhs)</td></tr>
+<tr class="separator:a10fbc82bf9f8146f79ce124b05e8bc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740544c75326ebc88d8044f67475f4bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a740544c75326ebc88d8044f67475f4bd"></a>
 <a class="el" href="classnytl_1_1vec.html">vec_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () const </td></tr>
 <tr class="separator:a740544c75326ebc88d8044f67475f4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acada79415cd74efd6023b5aeefb7e3b4"><td class="memTemplParams" colspan="2"><a class="anchor" id="acada79415cd74efd6023b5aeefb7e3b4"></a>
-template&lt;size_t odim, typename ot , typename  = typename std::enable_if&lt;!std::is_reference&lt;ot&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:acada79415cd74efd6023b5aeefb7e3b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator vec&lt; odim, ot &gt;</b> () const </td></tr>
-<tr class="separator:acada79415cd74efd6023b5aeefb7e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84abe12ad81aa6d10478a5036dd64ec"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad84abe12ad81aa6d10478a5036dd64ec"></a>
+template&lt;std::size_t OD, typename ot , typename  = typename std::enable_if&lt;!std::is_reference&lt;ot&gt;::value &amp;&amp; OD != dynamicSize&gt;::type&gt; </td></tr>
+<tr class="memitem:ad84abe12ad81aa6d10478a5036dd64ec"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator vec&lt; OD, ot &gt;</b> () const </td></tr>
+<tr class="separator:ad84abe12ad81aa6d10478a5036dd64ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e211cabb303c73bfe48f3a7e5a392c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55e211cabb303c73bfe48f3a7e5a392c"></a>
 const_pointer&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> () const  noexcept</td></tr>
 <tr class="separator:a55e211cabb303c73bfe48f3a7e5a392c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +331,9 @@ reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () noex
 <tr class="memitem:a7cfe74e391e0bd3516619101f584e129"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cfe74e391e0bd3516619101f584e129"></a>
 const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const  noexcept</td></tr>
 <tr class="separator:a7cfe74e391e0bd3516619101f584e129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2013e8c2085a423f42be21afe1338e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2013e8c2085a423f42be21afe1338e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classnytl_1_1vec.html">vec_type</a> &amp;other)</td></tr>
+<tr class="separator:ac2013e8c2085a423f42be21afe1338e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h3>Building nytl</h3>
-<p>Since nytl is a header-only library you dont have to compile anything, nytl has <b>no external dependencies</b>. Start by cloning the nytl repository from github: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;git clone https://github.com/nyorain/nytl</div>
+<p>Since nytl is a header-only library you dont have to compile anything, nytl has <b>no external dependencies</b>. Start by cloning the nytl repository from github: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;git clone https://github.com/nyorain/nytl.git</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cd nytl</div>
 </div><!-- fragment --><p>Now, you can either just copy all the header files, where you want them to be, or let cmake automatically install them as well as a pkg-config file (<b>not recommended on windows</b>). All the header files are situated in the nytl folder directly at the project root. cmake: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mkdir build</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cd build</div>

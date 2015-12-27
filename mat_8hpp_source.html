@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c07f278eb636869bd3519fd863dd73e4.html">nytl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_cdacd3de3c81ae92494a48fdddc335c1.html">nyorain</a></li><li class="navelem"><a class="el" href="dir_f83a892fa3a6e637c32bf8a3fb83a374.html">Programming</a></li><li class="navelem"><a class="el" href="dir_697496087b3a7b9026e6e75a2e0f2177.html">projects</a></li><li class="navelem"><a class="el" href="dir_4506774f6273dca8de105eaa17a3f3f5.html">nytl</a></li><li class="navelem"><a class="el" href="dir_2d4c0864672b19cca0207b2a692e0a50.html">nytl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -107,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">mat.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mat_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * The MIT License (MIT)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2015 Jan Kelling</span></div>
@@ -133,257 +132,189 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vec_8hpp.html">nytl/vec.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;nytl/vec.hpp&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;nytl/refVec.hpp&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;nytl/compFunc.hpp&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;nytl/misc.hpp&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;nytl/integer_sequence.hpp&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenytl.html">nytl</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//typedefs</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html">   43</a></span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> rows, std::<span class="keywordtype">size_t</span> cols, <span class="keyword">typename</span> prec, <span class="keyword">typename</span> Cond = <span class="keyword">typename</span> std::enable_if&lt;(rows &gt;= 1) &amp;&amp; (cols &gt;= 1) &amp;&amp; (!std::is_reference&lt;prec&gt;::value)&gt;::type&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1mat.html">mat</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> n, <span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">squareMat</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;n, n, prec&gt;</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat2</a> = <a class="code" href="classnytl_1_1mat.html">squareMat&lt;2,prec&gt;</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat3</a> = <a class="code" href="classnytl_1_1mat.html">squareMat&lt;3,prec&gt;</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat4</a> = <a class="code" href="classnytl_1_1mat.html">squareMat&lt;4,prec&gt;</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat23</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;2,3,prec&gt;</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat24</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;2,4,prec&gt;</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat32</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;3,2,prec&gt;</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat34</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;3,4,prec&gt;</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat42</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;4,2,prec&gt;</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat43</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;4,3,prec&gt;</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2f</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2ui</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2i</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2d</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2c</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2uc</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2l</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2ul</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2s</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat2&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat2us</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3f</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3ui</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3i</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3d</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3c</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3uc</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3l</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3ul</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3s</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat3&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat3us</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;nytl/integer_sequence.hpp&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenytl.html">nytl</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//typedefs</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span>&lt;std::size_t R, std::size_t C, <span class="keyword">typename</span> P, <span class="keyword">typename</span> = <span class="keyword">typename</span> </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::enable_if&lt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        (R &gt;= 1) &amp;&amp; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        (C &gt;= 1) &amp;&amp; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        (!std::is_reference&lt;P&gt;::value)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    &gt;::type&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html">   47</a></span>&#160;<span class="keyword">class</span> <a class="code" href="classnytl_1_1mat.html">mat</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> D, <span class="keyword">class</span> P&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">squareMat</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;D, D, P&gt;</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/matmp.inl&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/matypes.inl&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//mat class</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> R, std::<span class="keywordtype">size_t</span> C, <span class="keyword">typename</span> P, <span class="keyword">typename</span> Cond&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">class </span><a class="code" href="classnytl_1_1mat.html">mat</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> value_type = P;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">using</span> reference = value_type&amp;;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">using</span> const_reference = <span class="keyword">const</span> value_type&amp;;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">using</span> pointer = value_type*;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> const_pointer = <span class="keyword">const</span> value_type*;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> iterator = pointer;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> const_iterator = const_pointer;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">using</span> reverse_iterator = std::reverse_iterator&lt;iterator&gt;;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> const_reverse_iterator = std::reverse_iterator&lt;const_iterator&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">using</span> size_type = std::size_t;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">using</span> difference_type = std::ptrdiff_t;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat_type</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;R, C, P, Cond&gt;</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">rows_vec</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;R, P&gt;</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">cols_vec</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;C, P&gt;</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_squared = (R == C);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> constexpr size_type mat_size = R * C;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4f</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4ui</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4i</a>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4d</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4c</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4uc</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4l</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4ul</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4s</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat4&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat4us</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23f</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23ui</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23i</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23d</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23c</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23uc</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23l</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23ul</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23s</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat23&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat23us</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;R, vec&lt;C, P&gt;</a>&gt; data_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args, <span class="keyword">typename</span> = <span class="keyword">typename</span> </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        std::enable_if&lt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            std::is_convertible&lt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                std::tuple&lt;Args...&gt;, </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keyword">typename</span> type_tuple&lt;value_type, mat_size&gt;::type</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            &gt;::value&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        ::type&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>(Args&amp;&amp;... args) noexcept </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        { detail::initMatData&lt;R * C&gt;::call(data_, std::make_tuple(args...)); }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>(<span class="keyword">const</span> P&amp; val) noexcept</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        { detail::initMatData&lt;R * C&gt;::call(data_, val); }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    ~<a class="code" href="classnytl_1_1mat.html">mat</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>(<a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24f</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24ui</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24i</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24d</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24c</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24uc</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24l</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24ul</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24s</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat24&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat24us</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32f</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32ui</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32i</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32d</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32c</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32uc</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32l</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32ul</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32s</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat32&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat32us</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp; operator=(<a class="code" href="classnytl_1_1mat.html">mat_type</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args, <span class="keyword">typename</span> = <span class="keyword">typename</span> </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::enable_if&lt;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            std::is_convertible&lt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                std::tuple&lt;Args...&gt;, </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keyword">typename</span> type_tuple&lt;value_type, mat_size&gt;::type</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            &gt;::value&gt;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ::type&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a3e798524512c95a7676ccf41eb260361">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnytl_1_1mat.html#a3e798524512c95a7676ccf41eb260361">init</a>(Args&amp;&amp;... args) </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        { detail::initMatData&lt;R * C&gt;::call(data_, std::make_tuple(args...)); }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a48c57b7e5a7388259f16927a80a0d6de">  119</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;C, P&gt;</a>&amp; <a class="code" href="classnytl_1_1mat.html#a48c57b7e5a7388259f16927a80a0d6de">row</a>(<span class="keywordtype">size_t</span> i){ <span class="keywordflow">return</span> data_[i]; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a835b0ab249b01deb69b9f4431a455b4b">  122</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec&lt;C, P&gt;</a>&amp; <a class="code" href="classnytl_1_1mat.html#a835b0ab249b01deb69b9f4431a455b4b">row</a>(<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_[i]; }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34f</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34ui</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34i</a>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34d</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34c</a>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34uc</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34l</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34ul</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34s</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat34&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat34us</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a2080208ae2a939b0299a9d194fddcb47">  127</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">refVec&lt;R, P&gt;</a> <a class="code" href="classnytl_1_1mat.html#a2080208ae2a939b0299a9d194fddcb47">col</a>(<span class="keywordtype">size_t</span> i){ <span class="keywordflow">return</span> detail::makeRowRefVec&lt;R&gt;::call(data_, i); }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#af69f39f82cf12e23a72d8fce8f45e21b">  130</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;R, P&gt;</a> <a class="code" href="classnytl_1_1mat.html#af69f39f82cf12e23a72d8fce8f45e21b">col</a>(<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> detail::makeRowVec&lt;R&gt;::call(data_, i); }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a7dfb1f0585562a9dbccfa69082d5b594">  133</a></span>&#160;    pointer <a class="code" href="classnytl_1_1mat.html#a7dfb1f0585562a9dbccfa69082d5b594">data</a>(){ <span class="keywordflow">return</span> (pointer) &amp;data_.data(); }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42f</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42ui</a>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42i</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42d</a>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42c</a>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42uc</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42l</a>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42ul</a>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42s</a>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat42&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat42us</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;float&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43f</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;unsigned int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43ui</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;int&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43i</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;double&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43d</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43c</a>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;unsigned char&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43uc</a>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43l</a>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;unsigned long&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43ul</a>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43s</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1mat.html">mat43&lt;unsigned short&gt;</a> <a class="code" href="classnytl_1_1mat.html">mat43us</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#aef719e8ff4eed3612fc055b08e7fdf44">  136</a></span>&#160;    const_pointer <a class="code" href="classnytl_1_1mat.html#aef719e8ff4eed3612fc055b08e7fdf44">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (pointer) &amp;data_.data(); }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#a50d13018abec7a4afdab343ac509badd">  139</a></span>&#160;    std::unique_ptr&lt;P[]&gt; <a class="code" href="classnytl_1_1mat.html#a50d13018abec7a4afdab343ac509badd">copyData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> detail::copyMatData&lt;R * C&gt;::call(data_); }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classnytl_1_1mat.html#aad9174160846ea871962993874299960">  142</a></span>&#160;    type_tuple_t&lt;P, mat_size&gt; <a class="code" href="classnytl_1_1mat.html#aad9174160846ea871962993874299960">asTuple</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> detail::matTuple&lt;R * C&gt;::call(data_); }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//math</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    mat_type&amp; operator +=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1mat.html">mat&lt;R, C, P&gt;</a>&amp; other){ data_ += other.data_; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    mat_type&amp; operator -=(<span class="keyword">const</span> mat&lt;R, C, P&gt;&amp; other){ data_ -= other.data_; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    mat_type&amp; operator *=(<span class="keyword">const</span> mat&lt;C, R, P&gt;&amp; other)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    { </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">auto</span> od = data_; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> r(0); r &lt; R; r++) </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> c(0); c &lt; C; c++) </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                data_[r][c] = sum(od[r] * other.col(c)); </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    mat&lt;R, C, P&gt;&amp; operator *=(<span class="keyword">const</span> P&amp; other){ <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : *<span class="keyword">this</span>) val *= other; }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/matmp.inl&gt;</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">//mat class</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> rows, std::<span class="keywordtype">size_t</span> cols, <span class="keyword">typename</span> prec, <span class="keyword">typename</span> Cond&gt;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">class </span><a class="code" href="classnytl_1_1mat.html">mat</a></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">using</span> reference = value_type&amp;;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">using</span> const_reference = <span class="keyword">const</span> value_type&amp;;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">using</span> pointer = value_type*;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">using</span> const_pointer = <span class="keyword">const</span> value_type*;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">using</span> iterator = pointer;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">using</span> const_iterator = const_pointer;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">using</span> reverse_iterator = std::reverse_iterator&lt;iterator&gt;;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">using</span> const_reverse_iterator = std::reverse_iterator&lt;const_iterator&gt;;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">using</span> size_type = std::size_t;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">using</span> difference_type = std::ptrdiff_t;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1mat.html">mat_type</a> = <a class="code" href="classnytl_1_1mat.html">mat&lt;rows, cols, prec, Cond&gt;</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">rows_vec</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;rows, prec&gt;</a>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">cols_vec</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;cols, prec&gt;</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_squared = (rows == cols);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">static</span> constexpr size_type mat_size = rows * cols;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;rows, vec&lt;cols, prec&gt;</a>&gt; data_;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//invert</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">bool</span> invertable()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::enable_if&lt;is_squared, bool&gt; invert()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> invertable(); }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">//convert</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> OR, std::<span class="keywordtype">size_t</span> OC, <span class="keyword">class</span> OP&gt; <span class="keyword">operator</span> mat&lt;OR, OC, OP&gt;() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">//stl container</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    constexpr size_type size()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mat_size; }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    constexpr <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size() == 0; }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> fill(<span class="keyword">const</span> value_type&amp; val) { <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : data_)<span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : r) c = val; }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    iterator begin() noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    const_iterator begin() const noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    const_iterator cbegin() const noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    iterator end() noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    const_iterator end() const noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    const_iterator cend() const noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    reverse_iterator rbegin() noexcept { <span class="keywordflow">return</span> reverse_iterator(end()); }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    const_reverse_iterator rbegin() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cend()); }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    const_reverse_iterator crbegin() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cend()); }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    reverse_iterator rend() noexcept { <span class="keywordflow">return</span> reverse_iterator(begin()); }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    const_reverse_iterator rend() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cbegin()); }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    const_reverse_iterator crend() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cbegin()); }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args, <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;std::tuple&lt;Args...&gt;, <span class="keyword">typename</span> type_tuple&lt;value_type, mat_size&gt;::type&gt;::value&gt;::type&gt;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classnytl_1_1mat.html">mat</a>(Args&amp;&amp;... args) noexcept { constexpr detail::initMatData&lt;make_index_sequence&lt;rows * cols&gt;&gt; a{}; a(data_, std::make_tuple(args...)); }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    mat() noexcept = default;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    ~mat() noexcept = default;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    mat(const mat_type&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    mat(mat_type&amp;&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    mat_type&amp; operator=(const mat_type&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    mat_type&amp; operator=(mat_type&amp;&amp; other) noexcept = default;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    vec&lt;C, P&gt;&amp; operator[](<span class="keywordtype">size_t</span> row){ <span class="keywordflow">return</span> data_[row]; }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">const</span> vec&lt;C, P&gt;&amp; operator[](<span class="keywordtype">size_t</span> row)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_[row]; }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    vec&lt;C, P&gt;&amp; at(<span class="keywordtype">size_t</span> row){ <span class="keywordflow">if</span>(row &gt;= R || row &lt; 0)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row][col]; }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">const</span> vec&lt;C, P&gt;&amp; at(<span class="keywordtype">size_t</span> row)<span class="keyword"> const </span>{ <span class="keywordflow">if</span>(row &gt;= R || row &lt; 0)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row][col]; }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    P&amp; at(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> col){ <span class="keywordflow">if</span>(row &gt;= R || row &lt; 0)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row]; }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">const</span> P&amp; at(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> col)<span class="keyword"> const </span>{ <span class="keywordflow">if</span>(row &gt;= R || row &lt; 0)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row]; }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    template&lt;typename... Args, typename = typename std::enable_if&lt;std::is_convertible&lt;std::tuple&lt;Args...&gt;, typename type_tuple&lt;value_type, mat_size&gt;::type&gt;::value&gt;::type&gt;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> init(Args&amp;&amp;... args) { constexpr detail::initMatData&lt;make_index_sequence&lt;rows * cols&gt;&gt; a{}; a(data_, std::make_tuple(args...)); }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    reference front() noexcept { <span class="keywordflow">return</span> data_[0][0]; }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    const_reference front() const noexcept { <span class="keywordflow">return</span> data_[0][0]; }</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">//access</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    vec&lt;cols, prec&gt;&amp; row(<span class="keywordtype">size_t</span> i){ <span class="keywordflow">return</span> data_[i]; }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> vec&lt;cols, prec&gt;&amp; row(<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_[i]; }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    reference back() noexcept { <span class="keywordflow">return</span> data_[R - 1][C - 1]; }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    const_reference back() const noexcept { <span class="keywordflow">return</span> data_[R - 1][C - 1]; }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    refVec&lt;cols, prec&gt; col(<span class="keywordtype">size_t</span> i){ constexpr detail::makeRefVec&lt;make_index_sequence&lt;rows&gt;&gt; a{}; <span class="keywordflow">return</span> a(data_, i); }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    vec&lt;cols, prec&gt; col(<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ vec&lt;rows, prec&gt; ret; <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> r(0); r &lt; rows; r++)ret[r] = data_[r][i]; <span class="keywordflow">return</span> ret; }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">//operators and utility functions</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/mat.inl&gt;</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">//data</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    pointer data(){ <span class="keywordflow">return</span> (prec*)&amp;data_; }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    const_pointer data()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (prec*)&amp;data_; }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    std::unique_ptr&lt;prec[]&gt; copyData()<span class="keyword"> const </span>{ constexpr detail::copyMatData&lt;make_index_sequence&lt;rows * cols&gt;&gt; a{}; <span class="keywordflow">return</span> a(data_); }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">//math operators</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    mat_type&amp; operator +=(<span class="keyword">const</span> mat&lt;rows, cols, prec&gt;&amp; other){ data_ += other.data_; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    mat_type&amp; operator -=(<span class="keyword">const</span> mat&lt;rows, cols, prec&gt;&amp; other){ data_ -= other.data_; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    mat_type&amp; operator *=(<span class="keyword">const</span> mat&lt;cols, rows, prec&gt;&amp; other)</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        { <span class="keyword">auto</span> od = data_; <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> r(0); r &lt; rows; r++) <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> c(0); c &lt; cols; c++) data_[r][c] = weight(od[r] * other.col(c)); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    mat&lt;rows, cols, prec&gt;&amp; operator *=(<span class="keyword">const</span> prec&amp; other){ <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : *<span class="keyword">this</span>) val *= other; }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">//invert - todo</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> invertable()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    std::enable_if&lt;is_squared, bool&gt; invert()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> invertable(); }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">//convert</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> oprec&gt; <span class="keyword">operator</span> mat&lt;rows, cols, oprec&gt;() <span class="keyword">const</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        { mat&lt;rows, cols, oprec&gt; ret; <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> r(0); r &lt; rows; r++) <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> c(0); c &lt; cols; c++) ret[r][c] = data_[r][c];  <span class="keywordflow">return</span> ret; }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> orows, std::<span class="keywordtype">size_t</span> ocols, <span class="keyword">class</span> oprec&gt; <span class="keyword">operator</span> mat&lt;orows, ocols, oprec&gt;() <span class="keyword">const</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        { mat&lt;orows, ocols, oprec&gt; ret; <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> r(0); r &lt; std::min(orows, rows); r++) <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> c(0); c &lt; std::min(ocols, cols); c++) ret[r][c] = data_[r][c];  <span class="keywordflow">return</span> ret; }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">//stl container</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    constexpr size_type size()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mat_size; }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    constexpr <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">void</span> fill(<span class="keyword">const</span> value_type&amp; val) { <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : data_)<span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : r) c = val; }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    iterator begin() noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    const_iterator begin() const noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    const_iterator cbegin() const noexcept { <span class="keywordflow">return</span> &amp;data_[0][0]; }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    iterator end() noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    const_iterator end() const noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    const_iterator cend() const noexcept { <span class="keywordflow">return</span> begin() + mat_size; }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    reverse_iterator rbegin() noexcept { <span class="keywordflow">return</span> reverse_iterator(end()); }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    const_reverse_iterator rbegin() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cend()); }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    const_reverse_iterator crbegin() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cend()); }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    reverse_iterator rend() noexcept { <span class="keywordflow">return</span> reverse_iterator(begin()); }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    const_reverse_iterator rend() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cbegin()); }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    const_reverse_iterator crend() const noexcept { <span class="keywordflow">return</span> const_reverse_iterator(cbegin()); }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    vec&lt;cols, prec&gt;&amp; operator[](<span class="keywordtype">size_t</span> row){ <span class="keywordflow">return</span> data_[row]; }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">const</span> vec&lt;cols, prec&gt;&amp; operator[](<span class="keywordtype">size_t</span> row)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_[row]; }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    vec&lt;cols, prec&gt;&amp; at(<span class="keywordtype">size_t</span> row){ <span class="keywordflow">if</span>(row &gt;= rows || row &lt; 0)<span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row][col]; }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">const</span> vec&lt;cols, prec&gt;&amp; at(<span class="keywordtype">size_t</span> row)<span class="keyword"> const </span>{ <span class="keywordflow">if</span>(row &gt;= rows || row &lt; 0)<span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row][col]; }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    prec&amp; at(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> col){ <span class="keywordflow">if</span>(row &gt;= rows || row &lt; 0)<span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row]; }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">const</span> prec&amp; at(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> col)<span class="keyword"> const </span>{ <span class="keywordflow">if</span>(row &gt;= rows || row &lt; 0)<span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;nytl::mat::at: out of range&quot;</span>); <span class="keywordflow">return</span> data_[row]; }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    reference front() noexcept { <span class="keywordflow">return</span> data_[0][0]; }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    const_reference front() const noexcept { <span class="keywordflow">return</span> data_[0][0]; }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    reference back() noexcept { <span class="keywordflow">return</span> data_[rows - 1][cols - 1]; }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    const_reference back() const noexcept { <span class="keywordflow">return</span> data_[rows - 1][cols - 1]; }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">//operators and utility functions</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/mat.inl&gt;</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;} <span class="comment">//nytl</span></div>
-<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdoc">the namespace that is used for all classes and functions. </div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
-<div class="ttc" id="classnytl_1_1vec_html"><div class="ttname"><a href="classnytl_1_1vec.html">nytl::vec</a></div><div class="ttdoc">basic vector class with templated size and type </div><div class="ttdef"><b>Definition:</b> vec.hpp:39</div></div>
-<div class="ttc" id="vec_8hpp_html"><div class="ttname"><a href="vec_8hpp.html">vec.hpp</a></div><div class="ttdoc">vec header file </div></div>
-<div class="ttc" id="classnytl_1_1mat_html"><div class="ttname"><a href="classnytl_1_1mat.html">nytl::mat</a></div><div class="ttdoc">matrix class with templated size and precision </div><div class="ttdef"><b>Definition:</b> mat.hpp:43</div></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;} <span class="comment">//nytl</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="ttc" id="classnytl_1_1mat_html_aad9174160846ea871962993874299960"><div class="ttname"><a href="classnytl_1_1mat.html#aad9174160846ea871962993874299960">nytl::mat::asTuple</a></div><div class="ttdeci">type_tuple_t&lt; P, mat_size &gt; asTuple() const </div><div class="ttdoc">Returns a std::tuple filled with the components of the matrix. </div><div class="ttdef"><b>Definition:</b> mat.hpp:142</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a7dfb1f0585562a9dbccfa69082d5b594"><div class="ttname"><a href="classnytl_1_1mat.html#a7dfb1f0585562a9dbccfa69082d5b594">nytl::mat::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdoc">Returns a plain pointer to the data of the matrix. </div><div class="ttdef"><b>Definition:</b> mat.hpp:133</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_af69f39f82cf12e23a72d8fce8f45e21b"><div class="ttname"><a href="classnytl_1_1mat.html#af69f39f82cf12e23a72d8fce8f45e21b">nytl::mat::col</a></div><div class="ttdeci">vec&lt; R, P &gt; col(size_t i) const </div><div class="ttdoc">Returns a vec (just the values, no references) of a certain row. </div><div class="ttdef"><b>Definition:</b> mat.hpp:130</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a3e798524512c95a7676ccf41eb260361"><div class="ttname"><a href="classnytl_1_1mat.html#a3e798524512c95a7676ccf41eb260361">nytl::mat::init</a></div><div class="ttdeci">void init(Args &amp;&amp;...args)</div><div class="ttdoc">Initialized the matrix with the given values. </div><div class="ttdef"><b>Definition:</b> mat.hpp:113</div></div>
+<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
+<div class="ttc" id="classnytl_1_1vec_html"><div class="ttname"><a href="classnytl_1_1vec.html">nytl::vec</a></div><div class="ttdef"><b>Definition:</b> vec.hpp:43</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a48c57b7e5a7388259f16927a80a0d6de"><div class="ttname"><a href="classnytl_1_1mat.html#a48c57b7e5a7388259f16927a80a0d6de">nytl::mat::row</a></div><div class="ttdeci">vec&lt; C, P &gt; &amp; row(size_t i)</div><div class="ttdef"><b>Definition:</b> mat.hpp:119</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a2080208ae2a939b0299a9d194fddcb47"><div class="ttname"><a href="classnytl_1_1mat.html#a2080208ae2a939b0299a9d194fddcb47">nytl::mat::col</a></div><div class="ttdeci">refVec&lt; R, P &gt; col(size_t i)</div><div class="ttdef"><b>Definition:</b> mat.hpp:127</div></div>
+<div class="ttc" id="classnytl_1_1mat_html"><div class="ttname"><a href="classnytl_1_1mat.html">nytl::mat</a></div><div class="ttdef"><b>Definition:</b> mat.hpp:47</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_aef719e8ff4eed3612fc055b08e7fdf44"><div class="ttname"><a href="classnytl_1_1mat.html#aef719e8ff4eed3612fc055b08e7fdf44">nytl::mat::data</a></div><div class="ttdeci">const_pointer data() const </div><div class="ttdoc">Returns a const plain pointer to the data of the matrix. </div><div class="ttdef"><b>Definition:</b> mat.hpp:136</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a50d13018abec7a4afdab343ac509badd"><div class="ttname"><a href="classnytl_1_1mat.html#a50d13018abec7a4afdab343ac509badd">nytl::mat::copyData</a></div><div class="ttdeci">std::unique_ptr&lt; P[]&gt; copyData() const </div><div class="ttdoc">Copys the data of the matrix as plain unique ptr on the heap. </div><div class="ttdef"><b>Definition:</b> mat.hpp:139</div></div>
+<div class="ttc" id="classnytl_1_1mat_html_a835b0ab249b01deb69b9f4431a455b4b"><div class="ttname"><a href="classnytl_1_1mat.html#a835b0ab249b01deb69b9f4431a455b4b">nytl::mat::row</a></div><div class="ttdeci">const vec&lt; C, P &gt; &amp; row(size_t i) const </div><div class="ttdoc">Returns a conct-reference of a certain row of the matrix. </div><div class="ttdef"><b>Definition:</b> mat.hpp:122</div></div>
 </div><!-- fragment --></div><!-- contents -->
         </div>
 </div>

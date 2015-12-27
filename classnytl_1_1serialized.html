@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -102,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacenytl.html">nytl</a></li><li class="navelem"><a class="el" href="classnytl_1_1serialized.html">serialized</a></li>  </ul>
+<li class="navelem"><b>nytl</b></li><li class="navelem"><a class="el" href="classnytl_1_1serialized.html">serialized</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -111,42 +110,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classnytl_1_1serialized-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">nytl::serialized&lt; Base &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">nytl::serialized&lt; Base, CArgs &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3324089ad0e5fb23b32d2822a9f793ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3324089ad0e5fb23b32d2822a9f793ba"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (std::istream &amp;is)</td></tr>
-<tr class="separator:a3324089ad0e5fb23b32d2822a9f793ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367764db8eb88e0b617eda31c607b0bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a367764db8eb88e0b617eda31c607b0bc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::ostream &amp;os) const  =0</td></tr>
-<tr class="separator:a367764db8eb88e0b617eda31c607b0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633883ef062b83e465690bd8126e3e58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633883ef062b83e465690bd8126e3e58"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (std::istream &amp;is, CArgs...args)</td></tr>
+<tr class="separator:a633883ef062b83e465690bd8126e3e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c56412032c28335631b62f476e6fd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25c56412032c28335631b62f476e6fd6"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::ostream &amp;os) const </td></tr>
+<tr class="separator:a25c56412032c28335631b62f476e6fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad64d0f5fb798dd2a1d62f16dec6d9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ad64d0f5fb798dd2a1d62f16dec6d9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveFile</b> (const std::string &amp;filename) const </td></tr>
+<tr class="separator:a7ad64d0f5fb798dd2a1d62f16dec6d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847c00d52d174e61c451d539fba3e0a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a847c00d52d174e61c451d539fba3e0a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadFile</b> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a847c00d52d174e61c451d539fba3e0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a2ca52124de9bc3601decada2fbc0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67a2ca52124de9bc3601decada2fbc0d"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const  =0</td></tr>
+<tr class="separator:a67a2ca52124de9bc3601decada2fbc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b99767572e052ee3e3ad1a4eabba75f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b99767572e052ee3e3ad1a4eabba75f"></a>
-static <a class="el" href="classnytl_1_1serializer.html">serializer</a>&lt; Base &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>derivedTypes</b> ()</td></tr>
-<tr class="separator:a2b99767572e052ee3e3ad1a4eabba75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03aec6822615821ffea3f2d19760760f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a03aec6822615821ffea3f2d19760760f"></a>
+<tr class="memitem:ac59ee91a3580f15e8eb482fbf0fc468d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac59ee91a3580f15e8eb482fbf0fc468d"></a>
+static <a class="el" href="classnytl_1_1serializer.html">serializer</a>&lt; Base, CArgs... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>derivedTypes</b> ()</td></tr>
+<tr class="separator:ac59ee91a3580f15e8eb482fbf0fc468d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7740c3c3c28b2a0da13ab0bc8f408ab"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa7740c3c3c28b2a0da13ab0bc8f408ab"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a03aec6822615821ffea3f2d19760760f"><td class="memTemplItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerType</b> ()</td></tr>
-<tr class="separator:a03aec6822615821ffea3f2d19760760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8622553bb14a66dc327ee2e82798da5"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa8622553bb14a66dc327ee2e82798da5"></a>
+<tr class="memitem:aa7740c3c3c28b2a0da13ab0bc8f408ab"><td class="memTemplItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerType</b> ()</td></tr>
+<tr class="separator:aa7740c3c3c28b2a0da13ab0bc8f408ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721b40b4e1f5f3a16962d5f726993781"><td class="memTemplParams" colspan="2"><a class="anchor" id="a721b40b4e1f5f3a16962d5f726993781"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa8622553bb14a66dc327ee2e82798da5"><td class="memTemplItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerType</b> (const std::string &amp;str)</td></tr>
-<tr class="separator:aa8622553bb14a66dc327ee2e82798da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9e59dbcd2aae3503b1a615cf783c0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f9e59dbcd2aae3503b1a615cf783c0f"></a>
-static std::unique_ptr&lt; Base &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const std::string &amp;name)</td></tr>
-<tr class="separator:a7f9e59dbcd2aae3503b1a615cf783c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a843dbcf0ba62a5717417233bcc538f4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a843dbcf0ba62a5717417233bcc538f4f"></a>
-static std::unique_ptr&lt; Base &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createLoad</b> (std::istream &amp;is)</td></tr>
-<tr class="separator:a843dbcf0ba62a5717417233bcc538f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1e5a584b51267e216974967cd3204c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1c1e5a584b51267e216974967cd3204c"></a>
+<tr class="memitem:a721b40b4e1f5f3a16962d5f726993781"><td class="memTemplItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerType</b> (const std::string &amp;str)</td></tr>
+<tr class="separator:a721b40b4e1f5f3a16962d5f726993781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09495ee76974e995f614f79f4801bd5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09495ee76974e995f614f79f4801bd5b"></a>
+static std::unique_ptr&lt; Base &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const std::string &amp;name, CArgs...args)</td></tr>
+<tr class="separator:a09495ee76974e995f614f79f4801bd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57d9f3fc84f499164174e6fcf251777"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af57d9f3fc84f499164174e6fcf251777"></a>
+static std::unique_ptr&lt; Base &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createLoad</b> (std::istream &amp;is, CArgs...args)</td></tr>
+<tr class="separator:af57d9f3fc84f499164174e6fcf251777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90c0e55c50243c7bd8734bf3aabe0e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90c0e55c50243c7bd8734bf3aabe0e4"></a>
+static std::unique_ptr&lt; Base &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createLoad</b> (const std::string &amp;filename, CArgs...args)</td></tr>
+<tr class="separator:ab90c0e55c50243c7bd8734bf3aabe0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb72759a723451897cb96bca1ec84031"><td class="memTemplParams" colspan="2"><a class="anchor" id="abb72759a723451897cb96bca1ec84031"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1c1e5a584b51267e216974967cd3204c"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getName</b> (const T &amp;ref=T{})</td></tr>
-<tr class="separator:a1c1e5a584b51267e216974967cd3204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb72759a723451897cb96bca1ec84031"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getName</b> (const T &amp;ref=T{})</td></tr>
+<tr class="separator:abb72759a723451897cb96bca1ec84031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="serialize_8hpp_source.html">serialize.hpp</a></li>

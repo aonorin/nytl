@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['line',['line',['../classnytl_1_1line.html',1,'nytl']]],
-  ['line_2ehpp',['line.hpp',['../line_8hpp.html',1,'']]]
+  ['ignored',['ignored',['../structnytl_1_1ignored.html',1,'nytl']]],
+  ['init',['init',['../classnytl_1_1mat.html#a3e798524512c95a7676ccf41eb260361',1,'nytl::mat']]],
+  ['integer_5fsequence',['integer_sequence',['../classnytl_1_1integer__sequence.html',1,'nytl']]]
 ];

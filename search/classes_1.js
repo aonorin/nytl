@@ -14,5 +14,5 @@ var searchData=
   ['connection',['connection',['../classnytl_1_1connection.html',1,'nytl']]],
   ['connectiondata',['connectionData',['../structnytl_1_1connectionData.html',1,'nytl']]],
   ['connectionref',['connectionRef',['../classnytl_1_1connectionRef.html',1,'nytl']]],
-  ['const_5frefvec_5fiterator',['const_refvec_iterator',['../classnytl_1_1const__refvec__iterator.html',1,'nytl']]]
+  ['const_5frefvec_5fiterator',['const_refvec_iterator',['../classconst__refvec__iterator.html',1,'']]]
 ];

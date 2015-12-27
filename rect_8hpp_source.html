@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c07f278eb636869bd3519fd863dd73e4.html">nytl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_cdacd3de3c81ae92494a48fdddc335c1.html">nyorain</a></li><li class="navelem"><a class="el" href="dir_f83a892fa3a6e637c32bf8a3fb83a374.html">Programming</a></li><li class="navelem"><a class="el" href="dir_697496087b3a7b9026e6e75a2e0f2177.html">projects</a></li><li class="navelem"><a class="el" href="dir_4506774f6273dca8de105eaa17a3f3f5.html">nytl</a></li><li class="navelem"><a class="el" href="dir_2d4c0864672b19cca0207b2a692e0a50.html">nytl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -107,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">rect.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="rect_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * The MIT License (MIT)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2015 Jan Kelling</span></div>
@@ -133,9 +132,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vec_8hpp.html">nytl/vec.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="triangle_8hpp.html">nytl/triangle.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="line_8hpp.html">nytl/line.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;nytl/vec.hpp&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;nytl/triangle.hpp&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;nytl/line.hpp&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
@@ -178,185 +177,194 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;4, unsigned long&gt;</a> <a class="code" href="classnytl_1_1rect.html">rect4ul</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//should rlly be declared here? use helper member functions?</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//todo: intersection overload for point of intersection for types</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//tests</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1triangle.html">triangle&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1triangle.html">triangle&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//operations</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a> intersection(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt; combination(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt; difference(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt; symmetricDifference(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//todo: nytl_cpp14_constexpr</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">line&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_012_01_4.html">triangle&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">line&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_012_01_4.html">triangle&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keywordtype">bool</span> </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    contains(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, prec&gt;</a>&amp;);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//rect</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> dim, <span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//operations</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    intersection(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    combination(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1vec.html">vec_type</a> pposition = <a class="code" href="classnytl_1_1vec.html">vec_type</a>(), <a class="code" href="classnytl_1_1vec.html">vec_type</a> psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = default;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(const <a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(const <a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp;&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp;&amp; other) noexcept = default;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec</a>&lt;dim, <span class="keywordtype">double</span>&gt; center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    difference(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; std::vector&lt;rect&lt;dim, prec&gt;&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    symmetricDifference(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//conversion</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt; <span class="keyword">operator</span> rect&lt;odim, oprec&gt;() <span class="keyword">const</span> { <span class="keywordflow">return</span> rect&lt;odim, oprec&gt;(position, size); }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">//rect2</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classnytl_1_1rect_3_012_00_01prec_01_4.html">  119</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a>&lt;2, prec&gt;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> constexpr std::size_t dim = 2;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; pposition, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(prec x = prec(), prec y = prec(), prec width = prec(), prec height = prec()) noexcept : position(x,y), size(width,height) {}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> dim, <span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1vec.html">vec_type</a> pposition = <a class="code" href="classnytl_1_1vec.html">vec_type</a>(), <a class="code" href="classnytl_1_1vec.html">vec_type</a> psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = default;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(const <a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp; other) noexcept = default;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(const <a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp; other) noexcept = default;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, double&gt;</a> center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp;&amp; other) noexcept = default;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect</a>&lt;dim, prec&gt;&amp;&amp; other) noexcept = default;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec</a>&lt;dim, <span class="keywordtype">double</span>&gt; center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">//conversion</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt; <span class="keyword">operator</span> rect&lt;odim, oprec&gt;() <span class="keyword">const</span> { <span class="keywordflow">return</span> rect&lt;odim, oprec&gt;(position, size); }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;};</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position; }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(size.x, 0); }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(0, size.y);}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + size; }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> prec&amp; left()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x; }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">const</span> prec right()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x + size.x; }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">const</span> prec&amp; top()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y; }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> prec bottom()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y + size.y; }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    prec&amp; left() { <span class="keywordflow">return</span> position.x; }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    prec&amp; top() { <span class="keywordflow">return</span> position.y; }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">const</span> prec&amp; width()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.x; }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">const</span> prec&amp; height()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.y; }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">//rect2</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classnytl_1_1rect_3_012_00_01prec_01_4.html">  145</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a>&lt;2, prec&gt;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">static</span> constexpr std::size_t dim = 2;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; pposition, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(prec x = prec(), prec y = prec(), prec width = prec(), prec height = prec()) noexcept : position(x,y), size(width,height) {}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    prec&amp; width() { <span class="keywordflow">return</span> size.x; }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    prec&amp; height() { <span class="keywordflow">return</span> size.y; }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">//conversion</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">operator</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>(position, size); }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, double&gt;</a> center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//rect3</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classnytl_1_1rect_3_013_00_01prec_01_4.html">  171</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a>&lt;3, prec&gt;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">static</span> constexpr std::size_t dim = 3;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; pposition, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(prec x = prec(), prec y = prec(), prec z = prec(), prec width = prec(), prec height = prec(), prec depth = prec()) noexcept</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        : position(x,y,z), size(width,height,depth) {}</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position; }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(size.x, 0); }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(0, size.y);}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + size; }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">const</span> prec&amp; left()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x; }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">const</span> prec right()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x + size.x; }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">const</span> prec&amp; top()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y; }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">const</span> prec bottom()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y + size.y; }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    prec&amp; left() { <span class="keywordflow">return</span> position.x; }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    prec&amp; top() { <span class="keywordflow">return</span> position.y; }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">const</span> prec&amp; width()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.x; }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">const</span> prec&amp; height()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.y; }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    prec&amp; width() { <span class="keywordflow">return</span> size.x; }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    prec&amp; height() { <span class="keywordflow">return</span> size.y; }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, double&gt;</a> center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy(); }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(size.x, 0); }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(0, size.y);}</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + size.xy(); }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontTopLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position; }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontTopRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, 0, 0); }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontBottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, size.y, 0);}</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontBottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, size.y, 0); }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backTopLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, 0, size.z); }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backTopRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, 0, size.z); }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backBottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, size.y, size.z);}</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backBottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + size; }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">const</span> prec&amp; left()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x; }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    prec right()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x + size.x; }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">const</span> prec&amp; top()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y; }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    prec bottom()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y + size.y; }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">const</span> prec&amp; front()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.z + size.z; }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    prec back()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.z + size.z; }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">//conversion</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">operator</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>(position, size); }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">//rect3</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classnytl_1_1rect_3_013_00_01prec_01_4.html">  197</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1rect.html">rect</a>&lt;3, prec&gt;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">static</span> constexpr std::size_t dim = 3;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> position;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> size;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; pposition, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; psize = <a class="code" href="classnytl_1_1vec.html">vec_type</a>()) noexcept : position(pposition), size(psize) {}</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(prec x = prec(), prec y = prec(), prec z = prec(), prec width = prec(), prec height = prec(), prec depth = prec()) noexcept</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        : position(x,y,z), size(width,height,depth) {}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    ~<a class="code" href="classnytl_1_1rect.html">rect</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    prec&amp; left() { <span class="keywordflow">return</span> position.x; }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    prec&amp; top() { <span class="keywordflow">return</span> position.y; }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    prec&amp; front() { <span class="keywordflow">return</span> position.z; }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">const</span> prec&amp; width()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.x; }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">const</span> prec&amp; height()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.y; }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">const</span> prec&amp; depth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.z; }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    prec&amp; width() { <span class="keywordflow">return</span> size.x; }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    prec&amp; height() { <span class="keywordflow">return</span> size.y; }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    prec&amp; depth() { <span class="keywordflow">return</span> size.z; }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">//conversion</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">operator</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>(position, size); }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="classnytl_1_1rect.html">rect</a>&amp; operator=(<a class="code" href="classnytl_1_1rect.html">rect&lt;dim, prec&gt;</a>&amp;&amp; other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, double&gt;</a> center()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">double</span>)(position + (size / 2.d)); };</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy(); }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> topRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(size.x, 0); }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a>(0, size.y);}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, prec&gt;</a> bottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.xy() + size.xy(); }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontTopLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position; }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontTopRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, 0, 0); }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontBottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, size.y, 0);}</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> frontBottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, size.y, 0); }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backTopLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, 0, size.z); }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backTopRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(size.x, 0, size.z); }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backBottomLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a>(0, size.y, size.z);}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, prec&gt;</a> backBottomRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position + size; }</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">//operators</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/rect.inl&gt;</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
-<div class="ttc" id="classnytl_1_1triangle_html"><div class="ttname"><a href="classnytl_1_1triangle.html">nytl::triangle</a></div><div class="ttdoc">triangle class with templated dimension and precision </div><div class="ttdef"><b>Definition:</b> triangle.hpp:34</div></div>
-<div class="ttc" id="classnytl_1_1rect_3_013_00_01prec_01_4_html"><div class="ttname"><a href="classnytl_1_1rect_3_013_00_01prec_01_4.html">nytl::rect&lt; 3, prec &gt;</a></div><div class="ttdef"><b>Definition:</b> rect.hpp:171</div></div>
-<div class="ttc" id="triangle_8hpp_html"><div class="ttname"><a href="triangle_8hpp.html">triangle.hpp</a></div><div class="ttdoc">triangle header file </div></div>
-<div class="ttc" id="classnytl_1_1rect_html"><div class="ttname"><a href="classnytl_1_1rect.html">nytl::rect</a></div><div class="ttdoc">rectangle class with templated dimension and precision. Rectangles with dimensions > 2 can be underst...</div><div class="ttdef"><b>Definition:</b> rect.hpp:38</div></div>
-<div class="ttc" id="line_8hpp_html"><div class="ttname"><a href="line_8hpp.html">line.hpp</a></div><div class="ttdoc">triangle header file </div></div>
-<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdoc">the namespace that is used for all classes and functions. </div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keyword">const</span> prec&amp; left()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    prec right()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.x + size.x; }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">const</span> prec&amp; top()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y; }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    prec bottom()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.y + size.y; }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">const</span> prec&amp; front()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.z + size.z; }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    prec back()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position.z + size.z; }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    prec&amp; left() { <span class="keywordflow">return</span> position.x; }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    prec&amp; top() { <span class="keywordflow">return</span> position.y; }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    prec&amp; front() { <span class="keywordflow">return</span> position.z; }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">const</span> prec&amp; width()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.x; }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> prec&amp; height()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.y; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">const</span> prec&amp; depth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size.z; }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    prec&amp; width() { <span class="keywordflow">return</span> size.x; }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    prec&amp; height() { <span class="keywordflow">return</span> size.y; }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    prec&amp; depth() { <span class="keywordflow">return</span> size.z; }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> anyValueGreater(size, 0); }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">//conversion</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">class</span> oprec&gt;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">operator</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1rect.html">rect&lt;odim, oprec&gt;</a>(position, size); }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">//operators</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/rect.inl&gt;</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="ttc" id="classnytl_1_1rect_3_013_00_01prec_01_4_html"><div class="ttname"><a href="classnytl_1_1rect_3_013_00_01prec_01_4.html">nytl::rect&lt; 3, prec &gt;</a></div><div class="ttdef"><b>Definition:</b> rect.hpp:197</div></div>
+<div class="ttc" id="classnytl_1_1rect_html"><div class="ttname"><a href="classnytl_1_1rect.html">nytl::rect</a></div><div class="ttdef"><b>Definition:</b> rect.hpp:38</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">nytl::simplex&lt; D, P, 1 &gt;</a></div><div class="ttdef"><b>Definition:</b> line.hpp:57</div></div>
+<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
 <div class="ttc" id="classnytl_1_1vec_html"><div class="ttname"><a href="classnytl_1_1vec.html">nytl::vec&lt; dim, prec &gt;</a></div></div>
-<div class="ttc" id="classnytl_1_1rect_3_012_00_01prec_01_4_html"><div class="ttname"><a href="classnytl_1_1rect_3_012_00_01prec_01_4.html">nytl::rect&lt; 2, prec &gt;</a></div><div class="ttdef"><b>Definition:</b> rect.hpp:119</div></div>
-<div class="ttc" id="vec_8hpp_html"><div class="ttname"><a href="vec_8hpp.html">vec.hpp</a></div><div class="ttdoc">vec header file </div></div>
-<div class="ttc" id="classnytl_1_1line_html"><div class="ttname"><a href="classnytl_1_1line.html">nytl::line</a></div><div class="ttdoc">line class with templated dimension and precision. </div><div class="ttdef"><b>Definition:</b> line.hpp:33</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_012_01_4_html"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_012_01_4.html">nytl::simplex&lt; D, P, 2 &gt;</a></div><div class="ttdef"><b>Definition:</b> triangle.hpp:58</div></div>
+<div class="ttc" id="classnytl_1_1rect_3_012_00_01prec_01_4_html"><div class="ttname"><a href="classnytl_1_1rect_3_012_00_01prec_01_4.html">nytl::rect&lt; 2, prec &gt;</a></div><div class="ttdef"><b>Definition:</b> rect.hpp:145</div></div>
 </div><!-- fragment --></div><!-- contents -->
         </div>
 </div>

@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c07f278eb636869bd3519fd863dd73e4.html">nytl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_cdacd3de3c81ae92494a48fdddc335c1.html">nyorain</a></li><li class="navelem"><a class="el" href="dir_f83a892fa3a6e637c32bf8a3fb83a374.html">Programming</a></li><li class="navelem"><a class="el" href="dir_697496087b3a7b9026e6e75a2e0f2177.html">projects</a></li><li class="navelem"><a class="el" href="dir_4506774f6273dca8de105eaa17a3f3f5.html">nytl</a></li><li class="navelem"><a class="el" href="dir_2d4c0864672b19cca0207b2a692e0a50.html">nytl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -107,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">line.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="line_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * The MIT License (MIT)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2015 Jan Kelling</span></div>
@@ -133,79 +132,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vec_8hpp.html">nytl/vec.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenytl.html">nytl</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;nytl/vec.hpp&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;nytl/constants.hpp&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;nytl/simplex.hpp&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;nytl/log.hpp&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//typedefs</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classnytl_1_1line.html">   33</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; <span class="keyword">class </span><a class="code" href="classnytl_1_1line.html">line</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line2</a> = <a class="code" href="classnytl_1_1line.html">line&lt;2, prec&gt;</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line3</a> = <a class="code" href="classnytl_1_1line.html">line&lt;3, prec&gt;</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> prec&gt; <span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line4</a> = <a class="code" href="classnytl_1_1line.html">line&lt;4, prec&gt;</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line2f</a> = <a class="code" href="classnytl_1_1line.html">line&lt;2, float&gt;</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line3f</a> = <a class="code" href="classnytl_1_1line.html">line&lt;3, float&gt;</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line4f</a> = <a class="code" href="classnytl_1_1line.html">line&lt;4, float&gt;</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line2i</a> = <a class="code" href="classnytl_1_1line.html">line&lt;2, int&gt;</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line3i</a> = <a class="code" href="classnytl_1_1line.html">line&lt;3, int&gt;</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line4i</a> = <a class="code" href="classnytl_1_1line.html">line&lt;4, int&gt;</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line2ui</a> = <a class="code" href="classnytl_1_1line.html">line&lt;2, unsigned int&gt;</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line3ui</a> = <a class="code" href="classnytl_1_1line.html">line&lt;3, unsigned int&gt;</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">using</span> <a class="code" href="classnytl_1_1line.html">line4ui</a> = <a class="code" href="classnytl_1_1line.html">line&lt;4, unsigned int&gt;</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//tests</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; NYTL_CPP14_CONSTEXPR</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; constexpr</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt; NYTL_CPP14_CONSTEXPR</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="classnytl_1_1vec.html">vec&lt;dim, prec&gt;</a> intersection(<span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;, <span class="keyword">const</span> <a class="code" href="classnytl_1_1line.html">line&lt;dim, prec&gt;</a>&amp;);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//line</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//todo: ray, segment? some way to make clear what type of line it is</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> prec&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">class </span><a class="code" href="classnytl_1_1line.html">line</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> value_type = prec;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;dim, value_type&gt;</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> a;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> b;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    constexpr <a class="code" href="classnytl_1_1line.html">line</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; xa, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; xb) noexcept : a(xa), b(xb) {}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classnytl_1_1line.html">line</a>() noexcept = default;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    constexpr <span class="keywordtype">float</span> length()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> distance(a, b); }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    constexpr vec_type difference()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> b - a; }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    constexpr vec_type gradient()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> normalize(difference() / nytl::length(difference())); }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    constexpr vec_type gradient(std::size_t dimension)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gradient() / gradient()[dimension]; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    constexpr <span class="keywordtype">bool</span> definedFor(<span class="keyword">const</span> prec&amp; value, std::size_t dimension = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    NYTL_CPP14_CONSTEXPR vec_type valueAt(<span class="keyword">const</span> prec&amp; value, std::size_t dimension = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    constexpr prec min(std::size_t dimension)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nytl::min(a[dimension], b[dimension]); }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    constexpr prec max(std::size_t dimension)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nytl::max(a[dimension], b[dimension]); }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenytl.html">nytl</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//typedefs</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> D, <span class="keyword">typename</span> P = <span class="keywordtype">float</span>&gt; <span class="keyword">using</span> line = simplex&lt;D, P, 1&gt;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> P = <span class="keywordtype">float</span>&gt; <span class="keyword">using</span> line2 = line&lt;2, P&gt;;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> P = <span class="keywordtype">float</span>&gt; <span class="keyword">using</span> line3 = line&lt;3, P&gt;;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> P = <span class="keywordtype">float</span>&gt; <span class="keyword">using</span> line4 = line&lt;4, P&gt;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using</span> line2f = line&lt;2, float&gt;;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> line3f = line&lt;3, float&gt;;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using</span> line4f = line&lt;4, float&gt;;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using</span> line2i = line&lt;2, int&gt;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> line3i = line&lt;3, int&gt;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> line4i = line&lt;4, int&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">using</span> line2ui = line&lt;2, unsigned int&gt;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">using</span> line3ui = line&lt;3, unsigned int&gt;;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">using</span> line4ui = line&lt;4, unsigned int&gt;;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> D, <span class="keyword">typename</span> P&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classnytl_1_1simplex.html">simplex</a>&lt;D, P, 1&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> value_type = P;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">using</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a> = <a class="code" href="classnytl_1_1vec.html">vec&lt;D, value_type&gt;</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> a;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> b;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classnytl_1_1simplex.html">simplex</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; xa, <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; xb) noexcept : a(xa), b(xb) {}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classnytl_1_1simplex.html">simplex</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//simplex</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classnytl_1_1simplex.html#a8fc54063e2107e5a0e1fd5a7c86c8139">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> distance(a, b); }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> <a class="code" href="classnytl_1_1simplex.html#ad46fe3f6afe54b36c426d2d4151bc7e5">center</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (a + b) / 2; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;2, double&gt;</a> <a class="code" href="classnytl_1_1simplex.html#a3bf711aa45aa80b08f91cb049e254058">barycentric</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classnytl_1_1simplex.html#a185e1d5f4b13c4a90f7de645813d634d">sameSpace</a>(<span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec_type</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec&lt;3, vec_type&gt;</a>&amp; <a class="code" href="classnytl_1_1simplex.html#a9321a96e02b41c0438d86636584a1d2b">asVec</a>(){ <span class="keywordflow">return</span> *<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classnytl_1_1vec.html">vec_type</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <a class="code" href="classnytl_1_1vec.html">vec&lt;3, vec_type&gt;</a>&amp; <a class="code" href="classnytl_1_1simplex.html#a9321a96e02b41c0438d86636584a1d2b">asVec</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code" href="classnytl_1_1vec.html">vec_type</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> OD, <span class="keyword">typename</span> OP&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">operator</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">line&lt;OD, OP&gt;</a>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">line&lt;OD, OP&gt;</a>(a, b); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//line-specific</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#ac79490eb18323607c5ea19c00b3060b9">   85</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#ac79490eb18323607c5ea19c00b3060b9">length</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classnytl_1_1simplex.html#a8fc54063e2107e5a0e1fd5a7c86c8139">size</a>(); }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//conversion</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> odim, <span class="keyword">typename</span> oprec&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    constexpr <span class="keyword">operator</span> line&lt;odim, oprec&gt;() <span class="keyword">const</span> { <span class="keywordflow">return</span> line&lt;odim, oprec&gt;(a, b); }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//utility and operators</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/line.inl&gt;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdoc">the namespace that is used for all classes and functions. </div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
-<div class="ttc" id="classnytl_1_1vec_html"><div class="ttname"><a href="classnytl_1_1vec.html">nytl::vec&lt; dim, prec &gt;</a></div></div>
-<div class="ttc" id="vec_8hpp_html"><div class="ttname"><a href="vec_8hpp.html">vec.hpp</a></div><div class="ttdoc">vec header file </div></div>
-<div class="ttc" id="classnytl_1_1line_html"><div class="ttname"><a href="classnytl_1_1line.html">nytl::line</a></div><div class="ttdoc">line class with templated dimension and precision. </div><div class="ttdef"><b>Definition:</b> line.hpp:33</div></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a13b06dcc70db2263bbb60e3603860ca3">   88</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a13b06dcc70db2263bbb60e3603860ca3">difference</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> b - a; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a17481a3f67c3bd5c33446b1cbee7baca">   91</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a17481a3f67c3bd5c33446b1cbee7baca">gradient</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> normalize(difference()); }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a9e68e9f87e386d7f8f754ceebf220ddd">   96</a></span>&#160;    <a class="code" href="classnytl_1_1vec.html">vec_type</a> <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a9e68e9f87e386d7f8f754ceebf220ddd">gradient</a>(std::size_t dim)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> difference() / difference()[dim]; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> definedAt(<span class="keyword">const</span> value_type&amp; value, std::size_t dimension = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    vec_type valueAt(<span class="keyword">const</span> value_type&amp; value, std::size_t dimension = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a476b6abd2752c5bf11e643c7855d9d46">  108</a></span>&#160;    value_type <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a476b6abd2752c5bf11e643c7855d9d46">smallestValue</a>(std::size_t dim)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> min(a[dim], b[dim]); }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a78729814e1a1e0d26a37c3c826b8a4d8">  111</a></span>&#160;    value_type <a class="code" href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a78729814e1a1e0d26a37c3c826b8a4d8">greatestValue</a>(std::size_t dim)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> max(a[dim], b[dim]); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">//implementation, utility and operators</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#include &lt;nytl/bits/line.inl&gt;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="ttc" id="classnytl_1_1simplex_html_a185e1d5f4b13c4a90f7de645813d634d"><div class="ttname"><a href="classnytl_1_1simplex.html#a185e1d5f4b13c4a90f7de645813d634d">nytl::simplex::sameSpace</a></div><div class="ttdeci">bool sameSpace(const vec_type &amp;val) const </div><div class="ttdef"><b>Definition:</b> simplex.inl:139</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_a13b06dcc70db2263bbb60e3603860ca3"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a13b06dcc70db2263bbb60e3603860ca3">nytl::simplex&lt; D, P, 1 &gt;::difference</a></div><div class="ttdeci">vec_type difference() const </div><div class="ttdoc">Returns the vector that lays between the two points. </div><div class="ttdef"><b>Definition:</b> line.hpp:88</div></div>
+<div class="ttc" id="classnytl_1_1simplex_html_a9321a96e02b41c0438d86636584a1d2b"><div class="ttname"><a href="classnytl_1_1simplex.html#a9321a96e02b41c0438d86636584a1d2b">nytl::simplex::asVec</a></div><div class="ttdeci">vec&lt; A+1, vec_type &gt; &amp; asVec()</div><div class="ttdef"><b>Definition:</b> simplex.hpp:90</div></div>
+<div class="ttc" id="classnytl_1_1simplex_html_a3bf711aa45aa80b08f91cb049e254058"><div class="ttname"><a href="classnytl_1_1simplex.html#a3bf711aa45aa80b08f91cb049e254058">nytl::simplex::barycentric</a></div><div class="ttdeci">vec&lt; A+1, double &gt; barycentric(const vec_type &amp;val) const </div><div class="ttdef"><b>Definition:</b> simplex.inl:133</div></div>
+<div class="ttc" id="classnytl_1_1simplex_html_a8fc54063e2107e5a0e1fd5a7c86c8139"><div class="ttname"><a href="classnytl_1_1simplex.html#a8fc54063e2107e5a0e1fd5a7c86c8139">nytl::simplex::size</a></div><div class="ttdeci">double size() const </div><div class="ttdoc">Returns the size of the area (e.g. for a 3-dimensional area this would be the volume) ...</div><div class="ttdef"><b>Definition:</b> simplex.inl:120</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_a9e68e9f87e386d7f8f754ceebf220ddd"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a9e68e9f87e386d7f8f754ceebf220ddd">nytl::simplex&lt; D, P, 1 &gt;::gradient</a></div><div class="ttdeci">vec_type gradient(std::size_t dim) const </div><div class="ttdef"><b>Definition:</b> line.hpp:96</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_a17481a3f67c3bd5c33446b1cbee7baca"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a17481a3f67c3bd5c33446b1cbee7baca">nytl::simplex&lt; D, P, 1 &gt;::gradient</a></div><div class="ttdeci">vec_type gradient() const </div><div class="ttdoc">Returns a normalized (length = 1) gradient vector. </div><div class="ttdef"><b>Definition:</b> line.hpp:91</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html">nytl::simplex&lt; D, P, 1 &gt;</a></div><div class="ttdef"><b>Definition:</b> line.hpp:57</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_a78729814e1a1e0d26a37c3c826b8a4d8"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a78729814e1a1e0d26a37c3c826b8a4d8">nytl::simplex&lt; D, P, 1 &gt;::greatestValue</a></div><div class="ttdeci">value_type greatestValue(std::size_t dim) const </div><div class="ttdoc">Returns the greatest value the line is defined for in the given dimension. </div><div class="ttdef"><b>Definition:</b> line.hpp:111</div></div>
+<div class="ttc" id="namespacenytl_html"><div class="ttname"><a href="namespacenytl.html">nytl</a></div><div class="ttdef"><b>Definition:</b> cache.hpp:31</div></div>
+<div class="ttc" id="classnytl_1_1vec_html"><div class="ttname"><a href="classnytl_1_1vec.html">nytl::vec&lt; D, value_type &gt;</a></div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_ac79490eb18323607c5ea19c00b3060b9"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#ac79490eb18323607c5ea19c00b3060b9">nytl::simplex&lt; D, P, 1 &gt;::length</a></div><div class="ttdeci">double length() const </div><div class="ttdoc">Alias for size(). Returns the length of the line. </div><div class="ttdef"><b>Definition:</b> line.hpp:85</div></div>
+<div class="ttc" id="classnytl_1_1simplex_html"><div class="ttname"><a href="classnytl_1_1simplex.html">nytl::simplex</a></div><div class="ttdef"><b>Definition:</b> simplex.hpp:51</div></div>
+<div class="ttc" id="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4_html_a476b6abd2752c5bf11e643c7855d9d46"><div class="ttname"><a href="classnytl_1_1simplex_3_01D_00_01P_00_011_01_4.html#a476b6abd2752c5bf11e643c7855d9d46">nytl::simplex&lt; D, P, 1 &gt;::smallestValue</a></div><div class="ttdeci">value_type smallestValue(std::size_t dim) const </div><div class="ttdoc">Returns the smallest value the line is defined for in the given dimension. </div><div class="ttdef"><b>Definition:</b> line.hpp:108</div></div>
+<div class="ttc" id="classnytl_1_1simplex_html_ad46fe3f6afe54b36c426d2d4151bc7e5"><div class="ttname"><a href="classnytl_1_1simplex.html#ad46fe3f6afe54b36c426d2d4151bc7e5">nytl::simplex::center</a></div><div class="ttdeci">vec_type center() const </div><div class="ttdoc">Returns the center point of the area. </div><div class="ttdef"><b>Definition:</b> simplex.inl:127</div></div>
 </div><!-- fragment --></div><!-- contents -->
         </div>
 </div>

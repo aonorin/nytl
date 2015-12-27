@@ -57,7 +57,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -102,25 +101,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacenytl.html">nytl</a></li><li class="navelem"><a class="el" href="classnytl_1_1serialized.html">serialized</a></li>  </ul>
+<li class="navelem"><b>nytl</b></li><li class="navelem"><a class="el" href="classnytl_1_1serialized.html">serialized</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">nytl::serialized&lt; Base &gt; Member List</div>  </div>
+<div class="title">nytl::serialized&lt; Base, CArgs &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>create</b>(const std::string &amp;name) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>createLoad</b>(std::istream &amp;is) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>derivedTypes</b>() (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getName</b>(const T &amp;ref=T{}) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>load</b>(std::istream &amp;is) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>registerType</b>() (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>registerType</b>(const std::string &amp;str) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>save</b>(std::ostream &amp;os) const  =0 (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>create</b>(const std::string &amp;name, CArgs...args) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>createLoad</b>(std::istream &amp;is, CArgs...args) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>createLoad</b>(const std::string &amp;filename, CArgs...args) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>derivedTypes</b>() (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getName</b>(const T &amp;ref=T{}) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>load</b>(std::istream &amp;is, CArgs...args) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>loadFile</b>(const std::string &amp;filename) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>name</b>() const  =0 (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>registerType</b>() (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>registerType</b>(const std::string &amp;str) (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>save</b>(std::ostream &amp;os) const  (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>saveFile</b>(const std::string &amp;filename) const  (defined in <a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a>)</td><td class="entry"><a class="el" href="classnytl_1_1serialized.html">nytl::serialized&lt; Base, CArgs &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
         </div>
 </div>

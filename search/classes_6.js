@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['line',['line',['../classnytl_1_1line.html',1,'nytl']]]
+  ['ignored',['ignored',['../structnytl_1_1ignored.html',1,'nytl']]],
+  ['integer_5fsequence',['integer_sequence',['../classnytl_1_1integer__sequence.html',1,'nytl']]]
 ];
