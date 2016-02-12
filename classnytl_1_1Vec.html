@@ -165,7 +165,7 @@ constexpr Size&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
 <tr class="separator:a94d646ba2c13a46318c2495c5889be13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4aa2766d713aaba4fc252fbe0c549a"><td class="memTemplParams" colspan="2"><a class="anchor" id="aba4aa2766d713aaba4fc252fbe0c549a"></a>
-template&lt;typename... Args, typename  = typename std::enable_if&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;,				typename type_tuple&lt;Value, dim&gt;::type			&gt;::value		&gt;::type&gt; </td></tr>
+template&lt;typename... Args, typename  = typename std::enable_if_t&lt;std::is_convertible&lt; std::tuple&lt;Args...&gt;, TypeTuple&lt;Value, dim&gt;&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:aba4aa2766d713aaba4fc252fbe0c549a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Vec</b> (Args &amp;&amp;...args) noexcept</td></tr>
 <tr class="separator:aba4aa2766d713aaba4fc252fbe0c549a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3dfe8307a5c1793da5bd9d7aca3fc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf3dfe8307a5c1793da5bd9d7aca3fc4"></a>
@@ -558,12 +558,12 @@ Related Functions</h2></td></tr>
 <tr class="memitem:ab527805ef2fe22c25b3cf04c78e79993"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename TA , typename TB &gt; </td></tr>
 <tr class="memitem:ab527805ef2fe22c25b3cf04c78e79993"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, TA &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#ab527805ef2fe22c25b3cf04c78e79993">mix</a> (const TA &amp;x, const TA &amp;y, const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, TB &gt; &amp;a)</td></tr>
 <tr class="separator:ab527805ef2fe22c25b3cf04c78e79993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36634363a56d3c32760166ace7344507"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename T &gt; </td></tr>
-<tr class="memitem:a36634363a56d3c32760166ace7344507"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">raw</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#a36634363a56d3c32760166ace7344507">smallest</a> (const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;a)</td></tr>
-<tr class="separator:a36634363a56d3c32760166ace7344507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1ec17c65b397737ec2438f35dc5729"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename T &gt; </td></tr>
-<tr class="memitem:a4f1ec17c65b397737ec2438f35dc5729"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">raw</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#a4f1ec17c65b397737ec2438f35dc5729">greatest</a> (const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;a)</td></tr>
-<tr class="separator:a4f1ec17c65b397737ec2438f35dc5729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f469f342eef9edd3032fde9cbe51f6"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename T &gt; </td></tr>
+<tr class="memitem:a48f469f342eef9edd3032fde9cbe51f6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#a48f469f342eef9edd3032fde9cbe51f6">smallest</a> (const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;a)</td></tr>
+<tr class="separator:a48f469f342eef9edd3032fde9cbe51f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f6b372d4f153437e3b7d3781aa9cf0"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename T &gt; </td></tr>
+<tr class="memitem:a23f6b372d4f153437e3b7d3781aa9cf0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#a23f6b372d4f153437e3b7d3781aa9cf0">greatest</a> (const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;a)</td></tr>
+<tr class="separator:a23f6b372d4f153437e3b7d3781aa9cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12cde32829ca9bb63feddbc77f02615"><td class="memTemplParams" colspan="2">template&lt;std::size_t D&gt; </td></tr>
 <tr class="memitem:ae12cde32829ca9bb63feddbc77f02615"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Vec.html#ae12cde32829ca9bb63feddbc77f02615">any</a> (const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, bool &gt; &amp;v)</td></tr>
 <tr class="separator:ae12cde32829ca9bb63feddbc77f02615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -600,8 +600,8 @@ class nytl::Vec&lt; D, T &gt;</h3>
 <p>The template parameter D defines the dimension of the Vector.</p>
 <p>The template parameter T defines the type of the Vectors components.</p>
 <p>In most of the cases you do not have to care about the template parameters because there are typedefs for the common used types, e.g.: </p><ul>
-<li><a class="el" href="namespacenytl.html#a21b7f2985d733acda4b365e6252e74fd">nytl::Vec2f</a>, <a class="el" href="namespacenytl.html#a1ce4d411d29b04c62fb466bd9350f2c4">nytl::Vec3f</a> and <a class="el" href="namespacenytl.html#afa6116e55e169b46069bd1249e9032e5">nytl::Vec4f</a> for float Vecs </li>
-<li><a class="el" href="namespacenytl.html#a18490b400bcd02a15d6e9be31deffc25">nytl::Vec2i</a>, <a class="el" href="namespacenytl.html#a00cc42bbfdde5cfc2596809581b49a61">nytl::Vec3i</a> and <a class="el" href="namespacenytl.html#a04d3b95f54928b69f0d269666cd3efd4">nytl::Vec4i</a> for int Vecs</li>
+<li>nytl::Vec2f, nytl::Vec3f and nytl::Vec4f for float Vecs </li>
+<li>nytl::Vec2i, nytl::Vec3i and nytl::Vec4i for int Vecs</li>
 </ul>
 <p>There are much more <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> typedefs. All of them are named after a common pattern: <code>"nytl::Vec"</code> + <code>D</code> + <code>T</code> with <code>D</code> = {2, 3, 4} and <code>T</code> of: </p><ul>
 <li>f for float </li>
@@ -614,7 +614,7 @@ class nytl::Vec&lt; D, T &gt;</h3>
 <li>l for long </li>
 <li>ul for unsigned long</li>
 </ul>
-<p>Additionally there are <a class="el" href="namespacenytl.html#a4d97137257539f3fe342b503d7aa588e">nytl::Vec2&lt;T&gt;</a>, <a class="el" href="namespacenytl.html#afa057fe3bb20370de033fc227264b7cc">nytl::Vec3&lt;T&gt;</a> and <a class="el" href="namespacenytl.html#ae33c0d2c171cc3d70f8a538cb492f54e">nytl::Vec4&lt;T&gt;</a> typedefs. There are Vector specializations for 2;3 and 4 dimensional Vectors, as well as for a dynamic dimension (indicated by nytl::dynamicsize_type as D) or a reference type. All specializations behave like normal Vecs and provide the same operations. To make the extra specializations work you have to include the corresponding headers, &lt;<a class="el" href="refVec_8hpp.html" title="Makes the Vec specialization for reference types work. ">nytl/refVec.hpp</a>&gt; for reference-typed Vectors or &lt;<a class="el" href="dynVec_8hpp.html" title="Makes the dynamic-sized Vec specialization work. ">nytl/dynVec.hpp</a>&gt; for dynamic-sized Vectors.</p>
+<p>Additionally there are nytl::Vec2&lt;T&gt;, nytl::Vec3&lt;T&gt; and nytl::Vec4&lt;T&gt; typedefs. There are Vector specializations for 2;3 and 4 dimensional Vectors, as well as for a dynamic dimension (indicated by nytl::dynamicsize_type as D) or a reference type. All specializations behave like normal Vecs and provide the same operations. To make the extra specializations work you have to include the corresponding headers, &lt;<a class="el" href="refVec_8hpp.html" title="Makes the Vec specialization for reference types work. ">nytl/refVec.hpp</a>&gt; for reference-typed Vectors or &lt;<a class="el" href="dynVec_8hpp.html" title="Makes the dynamic-sized Vec specialization work. ">nytl/dynVec.hpp</a>&gt; for dynamic-sized Vectors.</p>
 <p>Except for the special dimension dynamicsize_type which make the <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> object more like a std::vector with the possibility to add and remove components, <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> objects are usually fixed-size and therefore entirely allocated on the stack. Fixed-size <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> specializations are always pod classes which means they can be safely casted to other pod types (one can e.g. safely cast a Vec3&lt;Vec2f&gt; into a Mat32f).</p>
 <p>In difference to std::array it is meant like a representation of a matheMatical Vector, it also has specializations for Vec2, Vec3 and Vec4 which mache dealing with them easier. The available functions for dealing with <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> and the design of <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> itself is closely related to the design of <a class="el" href="classnytl_1_1Vec.html" title="The Vec class represents a sized group of D values of type T. ">Vec</a> in glsl (free functional operators, matheMatical operators) while still oferring modern c++ features that make using them easier (e.g. iterators, tmp constructors or conversion operators). This is the most important class for all further matheMatical classes and operations in nytl since it can be used for storing position, size or as a general fixed- (or even dynamic-) sized container. </p>
 </div><h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -1284,7 +1284,7 @@ template&lt;std::size_t D, typename TA , typename TB &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4f1ec17c65b397737ec2438f35dc5729"></a>
+<a class="anchor" id="a23f6b372d4f153437e3b7d3781aa9cf0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1294,7 +1294,7 @@ template&lt;std::size_t D, typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">raw</a>&lt; T &gt; greatest </td>
+          <td class="memname">auto greatest </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
@@ -3159,7 +3159,7 @@ template&lt;std::size_t DA, std::size_t DB, typename TA , typename TB &gt; </div
 
 </div>
 </div>
-<a class="anchor" id="a36634363a56d3c32760166ace7344507"></a>
+<a class="anchor" id="a48f469f342eef9edd3032fde9cbe51f6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -3169,7 +3169,7 @@ template&lt;std::size_t D, typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">raw</a>&lt; T &gt; smallest </td>
+          <td class="memname">auto smallest </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classnytl_1_1Vec.html">Vec</a>&lt; D, T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>

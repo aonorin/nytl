@@ -50,8 +50,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Function</div>  </div>
 </div><!--header-->
@@ -77,16 +76,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1CompatibleFunction_3_01R_07A_8_8_8_08_4.html">nytl::CompatibleFunction&lt; R(A...)&gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Function object that is able to hold all functions with a compatible signature.  <a href="classnytl_1_1CompatibleFunction_3_01R_07A_8_8_8_08_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1function__traits.html">nytl::function_traits&lt; F &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-Template class to retrieve inforMation about a function type.  <a href="classnytl_1_1function__traits.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1FunctionTraits.html">nytl::FunctionTraits&lt; F &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-Template class to retrieve inforMation about a function type.  <a href="classnytl_1_1FunctionTraits.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga4ebe0b0cfd00ea63c0d04b10270bb4df"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga4ebe0b0cfd00ea63c0d04b10270bb4df"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__function.html#ga4ebe0b0cfd00ea63c0d04b10270bb4df">nytl::is_callable</a> = typename detail::isCallableImpl&lt; T &gt;</td></tr>
-<tr class="memdesc:ga4ebe0b0cfd00ea63c0d04b10270bb4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-Template to check if a type can be called like a function.  <a href="group__function.html#ga4ebe0b0cfd00ea63c0d04b10270bb4df">More...</a><br /></td></tr>
-<tr class="separator:ga4ebe0b0cfd00ea63c0d04b10270bb4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7dfb7c802909ca0cafd1f6180505ced6"><td class="memTemplParams" colspan="2">template&lt;class U , class V , class... t&gt; </td></tr>
 <tr class="memitem:ga7dfb7c802909ca0cafd1f6180505ced6"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; U(t...)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__function.html#ga7dfb7c802909ca0cafd1f6180505ced6">nytl::memberCallback</a> (U(V::*func)(t...), typename std::remove_const&lt; V &gt;::type *obj)</td></tr>
 <tr class="memdesc:ga7dfb7c802909ca0cafd1f6180505ced6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a std::function from a member function with a given object.  <a href="group__function.html#ga7dfb7c802909ca0cafd1f6180505ced6">More...</a><br /></td></tr>
@@ -106,23 +98,6 @@ Typedefs</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Several generic useful templates/classes dealing with function-like objects. </p>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga4ebe0b0cfd00ea63c0d04b10270bb4df"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__function.html#ga4ebe0b0cfd00ea63c0d04b10270bb4df">nytl::is_callable</a> = typedef typename detail::isCallableImpl&lt;T&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Meta-Template to check if a type can be called like a function. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga7dfb7c802909ca0cafd1f6180505ced6"></a>
 <div class="memitem">

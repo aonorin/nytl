@@ -60,7 +60,8 @@
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">tmp.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -83,46 +84,49 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2acd59b24bcb0b5a49cf67f701cd167e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2acd59b24bcb0b5a49cf67f701cd167e"></a>
+<tr class="memitem:ad5c32092c4a2749528956381d0ab94c5"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad5c32092c4a2749528956381d0ab94c5"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2acd59b24bcb0b5a49cf67f701cd167e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::tuple_erase_first_t</b> = typename tuple_erase_first&lt; T &gt;::type</td></tr>
-<tr class="separator:a2acd59b24bcb0b5a49cf67f701cd167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cfc44b70ee4c7b0dfa8039a3d6cd27"><td class="memTemplParams" colspan="2"><a class="anchor" id="a40cfc44b70ee4c7b0dfa8039a3d6cd27"></a>
+<tr class="memitem:ad5c32092c4a2749528956381d0ab94c5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::TupleEraseFirst</b> = typename TupleEraseFirstT&lt; T &gt;::type</td></tr>
+<tr class="separator:ad5c32092c4a2749528956381d0ab94c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0663e482a999b029512dc4bc7091c0"><td class="memTemplParams" colspan="2"><a class="anchor" id="acb0663e482a999b029512dc4bc7091c0"></a>
 template&lt;typename T , typename Append &gt; </td></tr>
-<tr class="memitem:a40cfc44b70ee4c7b0dfa8039a3d6cd27"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::tuple_append_t</b> = typename tuple_append&lt; T, Append &gt;::type</td></tr>
-<tr class="separator:a40cfc44b70ee4c7b0dfa8039a3d6cd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1be36b76001b21f59e5ae16f3affa2f"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad1be36b76001b21f59e5ae16f3affa2f"></a>
+<tr class="memitem:acb0663e482a999b029512dc4bc7091c0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::TupleAppend</b> = typename TupleAppendT&lt; T, Append &gt;::type</td></tr>
+<tr class="separator:acb0663e482a999b029512dc4bc7091c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849e5abd1bc5da020c9d8c00a8d3313a"><td class="memTemplParams" colspan="2"><a class="anchor" id="a849e5abd1bc5da020c9d8c00a8d3313a"></a>
 template&lt;typename T , typename Prepend &gt; </td></tr>
-<tr class="memitem:ad1be36b76001b21f59e5ae16f3affa2f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::tuple_prepend_t</b> = typename tuple_prepend&lt; T, Prepend &gt;::type</td></tr>
-<tr class="separator:ad1be36b76001b21f59e5ae16f3affa2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9986c30077dcf6eda3543a5f0804f87d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9986c30077dcf6eda3543a5f0804f87d"></a>
+<tr class="memitem:a849e5abd1bc5da020c9d8c00a8d3313a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::TuplePrepend</b> = typename TuplePrependT&lt; T, Prepend &gt;::type</td></tr>
+<tr class="separator:a849e5abd1bc5da020c9d8c00a8d3313a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007bc28ead6d4c77119cb9352978a702"><td class="memTemplParams" colspan="2"><a class="anchor" id="a007bc28ead6d4c77119cb9352978a702"></a>
 template&lt;typename T , std::size_t size, template&lt; typename... &gt; class Tuple = std::tuple&gt; </td></tr>
-<tr class="memitem:a9986c30077dcf6eda3543a5f0804f87d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::type_tuple_t</b> = typename type_tuple&lt; T, size, Tuple &gt;::type</td></tr>
-<tr class="separator:a9986c30077dcf6eda3543a5f0804f87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6dc0280bb3df946523ec59ae2c2c76a"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa6dc0280bb3df946523ec59ae2c2c76a"></a>
+<tr class="memitem:a007bc28ead6d4c77119cb9352978a702"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::TypeTuple</b> = typename TypeTupleT&lt; T, size, Tuple &gt;::type</td></tr>
+<tr class="separator:a007bc28ead6d4c77119cb9352978a702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee34336f2adf42b3f22aac90764e27eb"><td class="memTemplParams" colspan="2"><a class="anchor" id="aee34336f2adf42b3f22aac90764e27eb"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa6dc0280bb3df946523ec59ae2c2c76a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seq_erase_first_t</b> = typename seq_erase_first&lt; T &gt;::type</td></tr>
-<tr class="separator:aa6dc0280bb3df946523ec59ae2c2c76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d0ba6f1fc59fe6a9f533671f9c37ff"><td class="memTemplParams" colspan="2"><a class="anchor" id="a36d0ba6f1fc59fe6a9f533671f9c37ff"></a>
+<tr class="memitem:aee34336f2adf42b3f22aac90764e27eb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::SeqEraseFirst</b> = typename SeqEraseFirstT&lt; T &gt;::type</td></tr>
+<tr class="separator:aee34336f2adf42b3f22aac90764e27eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f72126905ff7fb77940faf7ff64aa8e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3f72126905ff7fb77940faf7ff64aa8e"></a>
 template&lt;typename T , typename T::value_type Append&gt; </td></tr>
-<tr class="memitem:a36d0ba6f1fc59fe6a9f533671f9c37ff"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seq_append_t</b> = typename seq_append&lt; T, Append &gt;::type</td></tr>
-<tr class="separator:a36d0ba6f1fc59fe6a9f533671f9c37ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae550cf7218525bf179460259b671d350"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae550cf7218525bf179460259b671d350"></a>
+<tr class="memitem:a3f72126905ff7fb77940faf7ff64aa8e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::SeqAppend</b> = typename SeqAppendT&lt; T, Append &gt;::type</td></tr>
+<tr class="separator:a3f72126905ff7fb77940faf7ff64aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561497ade8cab87d0bc38706171500a1"><td class="memTemplParams" colspan="2"><a class="anchor" id="a561497ade8cab87d0bc38706171500a1"></a>
 template&lt;typename T , typename T::value_type Prepend&gt; </td></tr>
-<tr class="memitem:ae550cf7218525bf179460259b671d350"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seq_prepend_t</b> = typename seq_prepend&lt; T, Prepend &gt;::type</td></tr>
-<tr class="separator:ae550cf7218525bf179460259b671d350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6559b56e86025c125adc83ddf0139f5b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6559b56e86025c125adc83ddf0139f5b"></a>
+<tr class="memitem:a561497ade8cab87d0bc38706171500a1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::SeqPrepend</b> = typename SeqPrependT&lt; T, Prepend &gt;::type</td></tr>
+<tr class="separator:a561497ade8cab87d0bc38706171500a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7b1882388f03ea61f357f16370be6b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4c7b1882388f03ea61f357f16370be6b"></a>
 template&lt;typename A , typename B &gt; </td></tr>
-<tr class="memitem:a6559b56e86025c125adc83ddf0139f5b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seq_merge_t</b> = typename seq_merge&lt; A, B &gt;::type</td></tr>
-<tr class="separator:a6559b56e86025c125adc83ddf0139f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87cd21740c46cdb7a2ec89c906298b8f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a87cd21740c46cdb7a2ec89c906298b8f"></a>
+<tr class="memitem:a4c7b1882388f03ea61f357f16370be6b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::SeqMerge</b> = typename SeqMergeT&lt; A, B &gt;::type</td></tr>
+<tr class="separator:a4c7b1882388f03ea61f357f16370be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de0571014f50c84c3399e94823f801d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9de0571014f50c84c3399e94823f801d"></a>
 template&lt;typename A , typename B &gt; </td></tr>
-<tr class="memitem:a87cd21740c46cdb7a2ec89c906298b8f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seq_merge_renumber_t</b> = typename seq_merge_renumber&lt; A, B &gt;::type</td></tr>
-<tr class="separator:a87cd21740c46cdb7a2ec89c906298b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21ada50e83b7cfcab8133fdaf7c8e477"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga21ada50e83b7cfcab8133fdaf7c8e477"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">nytl::raw</a> = typename detail::rawT&lt; T &gt;::type</td></tr>
-<tr class="memdesc:ga21ada50e83b7cfcab8133fdaf7c8e477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta programming template to remove all qualifiers and references from a given type T.  <a href="group__utility.html#ga21ada50e83b7cfcab8133fdaf7c8e477">More...</a><br /></td></tr>
-<tr class="separator:ga21ada50e83b7cfcab8133fdaf7c8e477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de0571014f50c84c3399e94823f801d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::SeqMergeRenumber</b> = typename SeqMergeRenumberT&lt; A, B &gt;::type</td></tr>
+<tr class="separator:a9de0571014f50c84c3399e94823f801d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2eced62ec86aca3c4e4a71b1746cdaa4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2eced62ec86aca3c4e4a71b1746cdaa4"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2eced62ec86aca3c4e4a71b1746cdaa4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>nytl::seqPrint</b> (std::ostream &amp;os)</td></tr>
+<tr class="separator:a2eced62ec86aca3c4e4a71b1746cdaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header that implementes several useful metaprogramming templates. </p>

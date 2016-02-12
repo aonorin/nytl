@@ -108,7 +108,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = Size
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b6ec6537294278bede572ea4a1251f8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0b6ec6537294278bede572ea4a1251f8"></a>
-template&lt;typename... Args, typename  = typename std::enable_if&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;,				type_tuple_t&lt;VecType, A + 1&gt;			&gt;::value		&gt;::type&gt; </td></tr>
+template&lt;typename... Args, typename  = typename std::enable_if_t&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;,				TypeTuple&lt;VecType, A + 1&gt;			&gt;::value		&gt;&gt; </td></tr>
 <tr class="memitem:a0b6ec6537294278bede572ea4a1251f8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Simplex</b> (Args &amp;&amp;...args) noexcept</td></tr>
 <tr class="separator:a0b6ec6537294278bede572ea4a1251f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc038d3ea6fb398a0fa5af01e26a82c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc038d3ea6fb398a0fa5af01e26a82c8"></a>

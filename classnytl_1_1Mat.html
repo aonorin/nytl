@@ -139,7 +139,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>cols_Vec</b> = <a cl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae72447898c021914f331c7e7591c8cea"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae72447898c021914f331c7e7591c8cea"></a>
-template&lt;typename... Args, typename  = typename std::enable_if&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;, 				typename type_tuple&lt;value_type, Mat_size&gt;::type			&gt;::value&gt; ::type&gt; </td></tr>
+template&lt;typename... Args, typename  = typename std::enable_if_t&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;, 				TypeTuple&lt;value_type, Mat_size&gt;			&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:ae72447898c021914f331c7e7591c8cea"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Mat</b> (Args &amp;&amp;...args) noexcept</td></tr>
 <tr class="separator:ae72447898c021914f331c7e7591c8cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b4b4a1872084282520aa7d1d4aa106"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6b4b4a1872084282520aa7d1d4aa106"></a>
@@ -158,7 +158,7 @@ template&lt;typename... Args, typename  = typename std::enable_if&lt;			std::is_
 <a class="el" href="classnytl_1_1Mat.html">MatType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classnytl_1_1Mat.html">MatType</a> &amp;&amp;other) noexcept=default</td></tr>
 <tr class="separator:a88ab881f538998fbaae53932b8efdcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7070be17a6a90e5ebf8cdf6f4eac08"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7e7070be17a6a90e5ebf8cdf6f4eac08"></a>
-template&lt;typename... Args, typename  = typename std::enable_if&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;, 				typename type_tuple&lt;value_type, Mat_size&gt;::type			&gt;::value&gt; ::type&gt; </td></tr>
+template&lt;typename... Args, typename  = typename std::enable_if_t&lt;			std::is_convertible&lt;				std::tuple&lt;Args...&gt;, 				TypeTuple&lt;value_type, Mat_size&gt;			&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:a7e7070be17a6a90e5ebf8cdf6f4eac08"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a7e7070be17a6a90e5ebf8cdf6f4eac08">init</a> (Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:a7e7070be17a6a90e5ebf8cdf6f4eac08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialized the Matrix with the given values. <br /></td></tr>
 <tr class="separator:a7e7070be17a6a90e5ebf8cdf6f4eac08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,10 +188,10 @@ const_pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 std::unique_ptr&lt; P[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a79a74b3282e5e588699c88f2d85933f2">copyData</a> () const </td></tr>
 <tr class="memdesc:a79a74b3282e5e588699c88f2d85933f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copys the data of the Matrix as plain unique ptr on the heap. <br /></td></tr>
 <tr class="separator:a79a74b3282e5e588699c88f2d85933f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81f1b0916a4197903a33ae5e4af024d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af81f1b0916a4197903a33ae5e4af024d"></a>
-type_tuple_t&lt; P, Mat_size &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#af81f1b0916a4197903a33ae5e4af024d">asTuple</a> () const </td></tr>
-<tr class="memdesc:af81f1b0916a4197903a33ae5e4af024d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a std::tuple filled with the components of the Matrix. <br /></td></tr>
-<tr class="separator:af81f1b0916a4197903a33ae5e4af024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c24b026a27d3762bb477e8579ddf2f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c24b026a27d3762bb477e8579ddf2f9"></a>
+TypeTuple&lt; P, Mat_size &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a4c24b026a27d3762bb477e8579ddf2f9">asTuple</a> () const </td></tr>
+<tr class="memdesc:a4c24b026a27d3762bb477e8579ddf2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a std::tuple filled with the components of the Matrix. <br /></td></tr>
+<tr class="separator:a4c24b026a27d3762bb477e8579ddf2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3404e9e48c238bb0a2d6bd1ee8d2981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3404e9e48c238bb0a2d6bd1ee8d2981"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#af3404e9e48c238bb0a2d6bd1ee8d2981">swapCol</a> (std::size_t a, std::size_t b)</td></tr>
 <tr class="memdesc:af3404e9e48c238bb0a2d6bd1ee8d2981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the both given columns. <br /></td></tr>
@@ -216,10 +216,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab5f47bbea73437936bac578d8f47da21"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_squared, TD &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#ab5f47bbea73437936bac578d8f47da21">invertable</a> () const </td></tr>
 <tr class="memdesc:ab5f47bbea73437936bac578d8f47da21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only available for squared (R == C) <a class="el" href="classnytl_1_1Mat.html" title="Matrix template class. ">Mat</a> objects.  <a href="#ab5f47bbea73437936bac578d8f47da21">More...</a><br /></td></tr>
 <tr class="separator:ab5f47bbea73437936bac578d8f47da21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3483566c0f7ce36ca3bb227023005d"><td class="memTemplParams" colspan="2">template&lt;typename TD  = void&gt; </td></tr>
-<tr class="memitem:a5d3483566c0f7ce36ca3bb227023005d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_squared, TD &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a5d3483566c0f7ce36ca3bb227023005d">invert</a> ()</td></tr>
-<tr class="memdesc:a5d3483566c0f7ce36ca3bb227023005d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the <a class="el" href="classnytl_1_1Mat.html" title="Matrix template class. ">Mat</a> object.  <a href="#a5d3483566c0f7ce36ca3bb227023005d">More...</a><br /></td></tr>
-<tr class="separator:a5d3483566c0f7ce36ca3bb227023005d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b00d737d7881ec1abb6cc927adef2c3"><td class="memTemplParams" colspan="2">template&lt;typename TD  = void&gt; </td></tr>
+<tr class="memitem:a1b00d737d7881ec1abb6cc927adef2c3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_squared, TD &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a1b00d737d7881ec1abb6cc927adef2c3">invert</a> ()</td></tr>
+<tr class="memdesc:a1b00d737d7881ec1abb6cc927adef2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the <a class="el" href="classnytl_1_1Mat.html" title="Matrix template class. ">Mat</a> object.  <a href="#a1b00d737d7881ec1abb6cc927adef2c3">More...</a><br /></td></tr>
+<tr class="separator:a1b00d737d7881ec1abb6cc927adef2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3838c8077f7ace89defc13829b56038d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3838c8077f7ace89defc13829b56038d"></a>
 template&lt;std::size_t OR, std::size_t OC, class OP &gt; </td></tr>
 <tr class="memitem:a3838c8077f7ace89defc13829b56038d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#a3838c8077f7ace89defc13829b56038d">operator Mat&lt; OR, OC, OP &gt;</a> () const </td></tr>
@@ -300,6 +300,10 @@ reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () noex
 <tr class="memitem:ac70b7f0ea946b100d8ec90beb5bb575a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac70b7f0ea946b100d8ec90beb5bb575a"></a>
 const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const noexcept</td></tr>
 <tr class="separator:ac70b7f0ea946b100d8ec90beb5bb575a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb22e97e5428e807fde913990f3a2e12"><td class="memTemplParams" colspan="2"><a class="anchor" id="adb22e97e5428e807fde913990f3a2e12"></a>
+template&lt;typename TD &gt; </td></tr>
+<tr class="memitem:adb22e97e5428e807fde913990f3a2e12"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; R, C, P &gt;::is_squared, TD &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>invert</b> ()</td></tr>
+<tr class="separator:adb22e97e5428e807fde913990f3a2e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -343,7 +347,7 @@ Related Functions</h2></td></tr>
 <tr class="memdesc:a365babeb755420d6aba947e752a89c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rearranges the Matrix rows.  <a href="#a365babeb755420d6aba947e752a89c08">More...</a><br /></td></tr>
 <tr class="separator:a365babeb755420d6aba947e752a89c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2ef60954088d12c7e2ca05dce89566b"><td class="memTemplParams" colspan="2">template&lt;std::size_t D, typename P &gt; </td></tr>
-<tr class="memitem:ad2ef60954088d12c7e2ca05dce89566b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacenytl.html#a4d97137257539f3fe342b503d7aa588e">Vec2</a>&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#ad2ef60954088d12c7e2ca05dce89566b">luDecomposition</a> (const <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, P &gt; &amp;m)</td></tr>
+<tr class="memitem:ad2ef60954088d12c7e2ca05dce89566b"><td class="memTemplItemLeft" align="right" valign="top">Vec2&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnytl_1_1Mat.html#ad2ef60954088d12c7e2ca05dce89566b">luDecomposition</a> (const <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, P &gt; &amp;m)</td></tr>
 <tr class="memdesc:ad2ef60954088d12c7e2ca05dce89566b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a luDecomposition of a non-singular Matrix.  <a href="#ad2ef60954088d12c7e2ca05dce89566b">More...</a><br /></td></tr>
 <tr class="separator:ad2ef60954088d12c7e2ca05dce89566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7565c21a1f9085a1a598efa5e4fba748"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7565c21a1f9085a1a598efa5e4fba748"></a>
@@ -463,16 +467,16 @@ template&lt;std::size_t R, std::size_t C, typename P&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5d3483566c0f7ce36ca3bb227023005d"></a>
+<a class="anchor" id="a1b00d737d7881ec1abb6cc927adef2c3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t R, std::size_t C, typename P &gt; </div>
+template&lt;std::size_t R, std::size_t C, typename P&gt; </div>
 <div class="memtemplate">
-template&lt;typename TD &gt; </div>
+template&lt;typename TD  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; R, C, P &gt;::is_squared, TD &gt;::type <a class="el" href="classnytl_1_1Mat.html">nytl::Mat</a>&lt; R, C, P &gt;::invert </td>
+          <td class="memname">std::enable_if&lt;is_squared, TD&gt;::type <a class="el" href="classnytl_1_1Mat.html">nytl::Mat</a>&lt; R, C, P &gt;::invert </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -483,7 +487,7 @@ template&lt;typename TD &gt; </div>
 <p>Inverts the <a class="el" href="classnytl_1_1Mat.html" title="Matrix template class. ">Mat</a> object. </p>
 <p>Only available for squared (R == C) <a class="el" href="classnytl_1_1Mat.html" title="Matrix template class. ">Mat</a> objects. </p><dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classnytl_1_1InvalidMatrix.html" title="Exception class deriving std::invalid_argument. ">nytl::InvalidMatrix</a></td><td>if the matrix is not invertable. Check this with <a class="el" href="classnytl_1_1Mat.html#ab5f47bbea73437936bac578d8f47da21" title="Only available for squared (R == C) Mat objects. ">invertable()</a> before using <a class="el" href="classnytl_1_1Mat.html#a5d3483566c0f7ce36ca3bb227023005d" title="Inverts the Mat object. ">invert()</a>. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classnytl_1_1InvalidMatrix.html" title="Exception class deriving std::invalid_argument. ">nytl::InvalidMatrix</a></td><td>if the matrix is not invertable. Check this with <a class="el" href="classnytl_1_1Mat.html#ab5f47bbea73437936bac578d8f47da21" title="Only available for squared (R == C) Mat objects. ">invertable()</a> before using <a class="el" href="classnytl_1_1Mat.html#a1b00d737d7881ec1abb6cc927adef2c3" title="Inverts the Mat object. ">invert()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -613,7 +617,7 @@ template&lt;std::size_t D, typename P &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacenytl.html#a4d97137257539f3fe342b503d7aa588e">Vec2</a>&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, double &gt; &gt; luDecomposition </td>
+          <td class="memname">Vec2&lt; <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, double &gt; &gt; luDecomposition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classnytl_1_1Mat.html">Mat</a>&lt; D, D, P &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>

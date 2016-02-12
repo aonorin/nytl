@@ -97,11 +97,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ArgsTuple</b> = std:
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e9a8d95df5fe29970cec91491c151d8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9e9a8d95df5fe29970cec91491c151d8"></a>
-template&lt;typename F , typename  = typename std::enable_if&lt;is_callable&lt;F&gt;::value&gt;::type&gt; </td></tr>
+template&lt;typename F , typename  = std::enable_if_t&lt;IsCallable&lt;F&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a9e9a8d95df5fe29970cec91491c151d8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CompatibleFunction</b> (F func) noexcept</td></tr>
 <tr class="separator:a9e9a8d95df5fe29970cec91491c151d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3664a5290f974eb10d7fc0f75ea943"><td class="memTemplParams" colspan="2"><a class="anchor" id="aff3664a5290f974eb10d7fc0f75ea943"></a>
-template&lt;typename F , typename O , typename  = typename std::enable_if&lt;is_callable&lt;F&gt;::value&gt;::type&gt; </td></tr>
+template&lt;typename F , typename O , typename  = std::enable_if_t&lt;IsCallable&lt;F&gt;&gt;&gt; </td></tr>
 <tr class="memitem:aff3664a5290f974eb10d7fc0f75ea943"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CompatibleFunction</b> (F func, O &amp;object) noexcept</td></tr>
 <tr class="separator:aff3664a5290f974eb10d7fc0f75ea943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9edaec1dca3a413e77c85f3af2104b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac9edaec1dca3a413e77c85f3af2104b"></a>
@@ -112,7 +112,7 @@ template&lt;typename Sig &gt; </td></tr>
 <tr class="memitem:ab1fa43fe71f8c5bfd79b292eeedc3d6a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CompatibleFunction</b> (const CompatibleFunction&lt; Sig &gt; &amp;other) noexcept</td></tr>
 <tr class="separator:ab1fa43fe71f8c5bfd79b292eeedc3d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a712ad367809ec67032e4aa295b26f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a29a712ad367809ec67032e4aa295b26f"></a>
-template&lt;typename F , typename  = typename std::enable_if&lt;is_callable&lt;F&gt;::value&gt;::type&gt; </td></tr>
+template&lt;typename F , typename  = typename std::enable_if_t&lt;IsCallable&lt;F&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a29a712ad367809ec67032e4aa295b26f"><td class="memTemplItemLeft" align="right" valign="top">CompFuncType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (F func) noexcept</td></tr>
 <tr class="separator:a29a712ad367809ec67032e4aa295b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35f9d11b6b2d567120ecdcf42e040ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35f9d11b6b2d567120ecdcf42e040ac8"></a>
