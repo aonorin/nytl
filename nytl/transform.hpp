@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2016 Jan Kelling
+ * Copyright (c) 2016 nyorain
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -97,7 +97,7 @@ public:
 	using Precision = P;
 	using VecType = Vec<dim, Precision>;
 	using MatType = SquareMat<dim + 1, Precision>;
-	using RotType = VecScalar<rotationPlanes(dim), Precision>;
+	using RotType = Vec<rotationPlanes(dim), Precision>;
 	using RectType = Rect<dim, Precision>;
 
 protected:
@@ -107,7 +107,7 @@ public:
     Transform() noexcept : mat_(identityMat<dim + 1, P>()) {} 
     ~Transform() noexcept = default;
 
-    void rotate(const RotType& rotation){ nytl::rotate<dim>(mat_, rotation); }
+    void rotate(const RotType& rotation){ nytl::rotate(mat_, rotation); }
     void translate(const VecType& translation){ nytl::translate(mat_, translation); }
     void scale(const VecType& scaling){ nytl::scale(mat_, scaling); }
 

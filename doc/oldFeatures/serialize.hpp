@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2016 Jan Kelling
+ * Copyright (c) 2016 nyorain
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
 
 #include <nytl/named.hpp>
 #include <nytl/typemap.hpp>
-#include <nytl/cloneable.hpp>
+#include <nytl/clone.hpp>
 
 #include <string>
 #include <memory>
@@ -50,7 +50,7 @@ public:
 
 	virtual bool load(std::istream&) { return 1; };
 	virtual bool save(std::ostream& out) const
-	{	
+	{
 		out << objectTypeName() << '\n';
 		return 1;
 	};
@@ -83,15 +83,15 @@ public:
 	using typename TypemapBase::Pointer;
 
 public:
-	Pointer createLoad(std::istream& in, CArgs... args) const 
+	Pointer createLoad(std::istream& in, CArgs... args) const
 	{
 		std::string name;
 		in >> name;
-		auto it = TypemapBase::typeIterator(name); 
+		auto it = TypemapBase::typeIterator(name);
 		if(TypemapBase::valid(it))
 			return it->second->createLoad(in);
 
-		return TypemapBase::EmptyFactory::call();
+		return {};
 	}
 
 	using TypemapBase::add;
